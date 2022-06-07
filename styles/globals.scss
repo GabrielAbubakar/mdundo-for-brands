@@ -8,6 +8,7 @@
     scroll-behavior: smooth;
 }
 
+
 /* font load */
 @font-face {
     font-family: 'Azo Sans';
@@ -59,6 +60,13 @@
     font-style: normal;
 }
 
+//Global Variables
+:root {
+    $color-primary-yellow: #ff8c00;
+}
+
+//Mixins (For Responsive CSS)
+
 
 
 
@@ -71,4 +79,5 @@
 
 body {
     font-family: 'Azo Sans', 'Open Sans', sans-serif;
+    color: #696871;
 }

@@ -1,0 +1,84 @@
+.home {
+    background-color: #F8F8F8;
+    padding: 5rem 0 7rem 0;
+    margin-bottom: 3rem;
+}
+
+.homeContainer {
+    margin-left: 7rem;
+    display: flex;
+}
+
+
+
+.homeTextContent {
+    align-self: center;
+    flex: .6;
+    margin-top: 1rem;
+}
+
+.homeTextContent h1 {
+    font-family: 'Azo Sans Bd', sans-serif;
+    font-weight: 700;
+    font-size: 2.5rem;
+    line-height: 45px;
+    text-transform: uppercase;
+    color: #333333;
+    margin-bottom: 2.5rem;
+}
+
+.homeTextContent h1 span {
+    color: #FF8C00;
+}
+
+.homeTextCta {
+    display: flex;
+    gap: 1rem;
+    margin-bottom: 3rem;
+}
+
+.homeTextCta a {
+    font-family: 'Azo Sans Bd', sans-serif;
+    font-size: 0.9375rem;
+    text-transform: uppercase;
+    border-radius: .6rem;
+    font-weight: 700;
+    text-decoration: none;
+    padding: 1rem 2rem;
+    transition: all .2s ease;
+}
+
+.homeTextCta a:first-of-type {
+    background-color: #FF8C00;
+    color: #ffffff;
+}
+
+.homeTextCta a:last-of-type {
+    background-color: transparent;
+    color: #FF8C00;
+
+    &:hover {
+        text-decoration: underline;
+    }
+}
+
+.homeTextCta a:hover {
+    transform: translateY(-1px);
+}
+
+.homeTextUsers {
+
+    p {
+        margin-bottom: 1rem;
+    }
+}
+
+.userLogos {
+    display: flex;
+    gap: 3rem;
+}
+
+.homeImgContainer {
+    flex: 1;
+    margin-top: -2rem;
+}
