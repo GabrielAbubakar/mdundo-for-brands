@@ -13,7 +13,7 @@ const Home = () => {
 
 
             {/* Home Section */}
-            <section className={styles.home}>
+            <section className={styles.home} id="home">
                 <div className='widthContainer'>
                     <div className={styles.homeContainer}>
                         <div className={styles.homeTextContent}>
@@ -41,7 +41,21 @@ const Home = () => {
                 </div>
             </section>
 
-
+            <section className={styles.caseStudies}>
+                <div className='widthContainer'>
+                    <div className={styles.caseStudiesContainer}>
+                        <div className={styles.caseStudiesLeft}>
+                            <p>
+                                See how we’ve helped our clients increase their Brandlift score with our <br /> unique advertising and insights.
+                            </p>
+                            <a href="#casestudies">
+                                View Case Studies
+                            </a>
+                        </div>
+                        <h2>Case Studies</h2>
+                    </div>
+                </div>
+            </section>
 
 
         </div>

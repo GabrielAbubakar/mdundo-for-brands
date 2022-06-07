@@ -1,15 +1,12 @@
 .home {
-    background-color: #F8F8F8;
+    background-color: #f3f3f3;
     padding: 5rem 0 7rem 0;
-    margin-bottom: 3rem;
 }
 
 .homeContainer {
     margin-left: 5rem;
     display: flex;
 }
-
-
 
 .homeTextContent {
     align-self: center;
@@ -81,4 +78,60 @@
 .homeImgContainer {
     flex: 1;
     margin-top: -2rem;
+}
+
+
+
+// Case Studies Section
+.caseStudies {
+    padding: 4rem 7rem;
+    background-color: #F9F9F9;
+
+}
+
+.caseStudiesContainer {
+    display: flex;
+    justify-content: space-between;
+
+
+
+    h2 {
+        font-family: 'Azo Sans Bd', sans-serif;
+        font-size: 2.5rem;
+        font-weight: 700;
+        line-height: 45px;
+        letter-spacing: 0px;
+        text-transform: uppercase;
+        color: #333333;
+        align-items: center;
+        margin-top: 2rem;
+    }
+}
+
+.caseStudiesLeft {
+
+    p {
+        font-family: 'Azo Sans';
+        font-size: 20px;
+        font-weight: 400;
+        line-height: 30px;
+        letter-spacing: -0.6252632141113281px;
+        margin-bottom: 1.5rem;
+    }
+
+    a {
+        font-family: 'Azo Sans Bd', sans-serif;
+        font-size: 0.9375rem;
+        text-transform: uppercase;
+        border-radius: .6rem;
+        font-weight: 700;
+        text-decoration: none;
+        transition: all .2s ease;
+        background-color: transparent;
+        color: #FF8C00;
+
+        &:hover {
+            text-decoration: underline;
+        }
+    }
 }
