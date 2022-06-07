@@ -14,27 +14,29 @@ const Home = () => {
 
             {/* Home Section */}
             <section className={styles.home}>
-                <div className={styles.homeContainer}>
-                    <div className={styles.homeTextContent}>
-                        <h1>
-                            Find out how your brand is performing <br /> in <span>Africa&apos;s biggest consumer market</span>
-                        </h1>
-                        <div className={styles.homeTextCta}>
-                            <a href="#try">Try Now(Free)</a>
-                            <a href="#vid">Watch Introductory Video</a>
-                        </div>
-                        <div className={styles.homeTextUsers}>
-                            <p>Trusted by over 100 businesses</p>
-                            <div className={styles.userLogos}>
-                                <Image src={Sportpesa} alt="Sportpesa" />
-                                <Image src={EABL} alt="EABL" />
-                                <Image src={Cocacola} alt="Cocacola" />
+                <div className='widthContainer'>
+                    <div className={styles.homeContainer}>
+                        <div className={styles.homeTextContent}>
+                            <h1>
+                                Find out how your brand is performing <br /> in <span>Africa&apos;s biggest consumer market</span>
+                            </h1>
+                            <div className={styles.homeTextCta}>
+                                <a href="#try">Try Now(Free)</a>
+                                <a href="#vid">Watch Introductory Video</a>
+                            </div>
+                            <div className={styles.homeTextUsers}>
+                                <p>Trusted by over 100 businesses</p>
+                                <div className={styles.userLogos}>
+                                    <Image src={Sportpesa} alt="Sportpesa" />
+                                    <Image src={EABL} alt="EABL" />
+                                    <Image src={Cocacola} alt="Cocacola" />
+                                </div>
                             </div>
                         </div>
-                    </div>
 
-                    <div className={styles.homeImgContainer}>
-                        <Image src={BrandLift} alt="bradlift desktop " width={944} height={577} />
+                        <div className={styles.homeImgContainer}>
+                            <Image src={BrandLift} alt="bradlift desktop " width={944} height={577} />
+                        </div>
                     </div>
                 </div>
             </section>
