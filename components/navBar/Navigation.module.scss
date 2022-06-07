@@ -16,15 +16,16 @@
 
 .navigation__links {
     display: flex;
-    gap: 3rem;
+    gap: 4rem;
     list-style: none;
+    align-items: center;
 }
 
 .navigation__links li {
     /* display: inline; */
 }
 
-.navigation__links a {
+.navigation__links li a {
     font-family: 'Azo Sans Bd', 'Open Sans', sans-serif;
     color: #696871;
     text-transform: uppercase;
@@ -37,7 +38,7 @@
     border-bottom: 2px solid transparent;
 }
 
-.navigation__links a:hover {
+.navigation__links li a:hover {
     border-bottom: 2px solid #FF8C00;
     color: #19191B;
 }
@@ -53,7 +54,7 @@
     border-radius: .6rem;
     font-weight: 700;
     text-decoration: none;
-    padding: 1rem 3rem;
+    padding: 1rem 4rem;
     transition: all .2s ease;
 
 }

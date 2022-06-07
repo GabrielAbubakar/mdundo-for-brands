@@ -1,22 +1,23 @@
 import React from 'react'
-import './Navigation.css'
-import MudondoLogo from '../../assets/images/MdundoBrandsLogo.svg'
+import Image from 'next/image'
+import styles from './Navigation.module.scss'
+import MudondoLogo from '../../public/assets/images/MdundoBrandsLogo.svg'
+
 
 const Navigation = () => {
     return (
-        <div className='navigation__container'>
-            <nav className='navigation'>
-                <div className='navigation__logo'>
-                    <img src={MudondoLogo} alt="mdundobrands logo" />
+        <div className={styles.navigation__container}>
+            <nav className={styles.navigation}>
+                <div className={styles.navigation__logo}>
+                    <Image src={MudondoLogo} alt="mdundobrands" title='mdundobrands logo' />
                 </div>
 
-                <ul className='navigation__links'>
-                    <li><a href="#home">Home</a></li>
-                    <li><a href="#features">Features</a></li>
-                    <li><a href="#clients">Clients</a></li>
+                <ul className={styles.navigation__links}>
+                    <li><a href="#home">Resources</a></li>
+                    <a href='#none' className={styles.navigation__button}>Sign Up</a>
                 </ul>
 
-                <a href='#none' className='navigation__button'>Get in Touch</a>
+
             </nav>
         </div>
     )

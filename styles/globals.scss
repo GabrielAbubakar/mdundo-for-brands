@@ -1,0 +1,74 @@
+/* global styles */
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+/* font load */
+@font-face {
+    font-family: 'Azo Sans';
+    src: url('../public/assets/font/AzoSans-Regular.eot');
+    src: local('Azo Sans Regular'), local('AzoSans-Regular'),
+        url('../public/assets/font/AzoSans-Regular.eot') format('embedded-opentype'),
+        url('../public/assets/font/AzoSans-Regular.woff2') format('woff2'),
+        url('../public/assets/font/AzoSans-Regular.woff') format('woff'),
+        url('../public/assets/font/AzoSans-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Azo Sans Bk';
+    src: url('../public/assets/font/AzoSans-Black.eot');
+    src: local('Azo Sans Black'), local('AzoSans-Black'),
+        url('../public/assets/font/AzoSans-Black.eot?#iefix') format('embedded-opentype'),
+        url('../public/assets/font/AzoSans-Black.woff2') format('woff2'),
+        url('../public/assets/font/AzoSans-Black.woff') format('woff'),
+        url('../public/assets/font/AzoSans-Black.ttf') format('truetype');
+    font-weight: 900;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Azo Sans Md';
+    src: url('../public/assets/font/AzoSans-Medium.eot');
+    src: local('Azo Sans Medium'), local('AzoSans-Medium'),
+        url('../public/assets/font/AzoSans-Medium.eot?#iefix') format('embedded-opentype'),
+        url('../public/assets/font/AzoSans-Medium.woff2') format('woff2'),
+        url('../public/assets/font/AzoSans-Medium.woff') format('woff'),
+        url('../public/assets/font/AzoSans-Medium.ttf') format('truetype');
+    font-weight: 500;
+    font-style: normal;
+}
+
+
+
+@font-face {
+    font-family: 'Azo Sans Bd';
+    src: url('../public/assets/font/AzoSans-Bold.eot');
+    src: local('Azo Sans Bold'), local('AzoSans-Bold'),
+        url('../public/assets/font/AzoSans-Bold.eot?#iefix') format('embedded-opentype'),
+        url('../public/assets/font/AzoSans-Bold.woff2') format('woff2'),
+        url('../public/assets/font/AzoSans-Bold.woff') format('woff'),
+        url('../public/assets/font/AzoSans-Bold.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+}
+
+
+
+
+
+
+
+
+
+
+
+body {
+    font-family: 'Azo Sans', 'Open Sans', sans-serif;
+}

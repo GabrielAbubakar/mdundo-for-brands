@@ -1,11 +1,16 @@
-
+import Navigation from "../components/navBar/Navigation";
 
 const Home = () => {
-  return (
-    <div>
-      Home
-    </div>
-  )
+    return (
+        <div>
+            <Navigation />
+
+
+
+
+
+        </div>
+    )
 }
 
 export default Home
