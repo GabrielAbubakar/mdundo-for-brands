@@ -6,6 +6,7 @@ import Sportpesa from '../public/assets/images/SportPesa.svg'
 import Cocacola from '../public/assets/images/CocaCola.svg'
 import EABL from '../public/assets/images/EABL.svg'
 import AudioAdMockup from '../public/assets/images/AudioAdMockup.png'
+import Tabs from '../components/FeatureTabs/Tabs';
 
 const Home = () => {
     return (
@@ -65,6 +66,7 @@ const Home = () => {
                 <div className={styles.featuresContainer}>
                     <div className={styles.featuresTop}>
                         <div className={styles.featuresContent}>
+                            <h3>Audio Ads</h3>
                             <h2>Capture the Attention of your Audience with High <span>impact audio ads!</span></h2>
                             <p>
                                 5-10 second Audio Ad, played just before your target audience listens to their favorite song!
@@ -79,7 +81,7 @@ const Home = () => {
                     <div className={styles.featuresMid}>
                         <p>See our audio ads in action for these brands</p>
 
-
+                        <Tabs />
                     </div>
                 </div>
             </section>
