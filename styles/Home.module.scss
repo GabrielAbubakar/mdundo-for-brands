@@ -210,3 +210,33 @@
 .featuresContent a:hover {
     transform: translateY(-1px);
 }
+
+.featuresMid {}
+
+.featuresBottom {
+    padding: 6rem 7rem;
+    max-width: 1440px;
+    margin: 0 auto;
+}
+
+.featuresBottomContainer {
+    display: flex;
+    justify-content: space-between;
+    gap: 8rem;
+
+    &>* {
+        flex: 1;
+    }
+}
+
+.featuresBottomContentBox {
+
+    h3 {
+        font-size: 1.375rem;
+        font-family: 'Azo Sans Bd';
+        margin: 2rem 0 1rem 0;
+        color: #333333;
+    }
+
+    p {}
+}

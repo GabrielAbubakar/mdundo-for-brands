@@ -1,12 +1,15 @@
 import Image from 'next/image'
 import Navigation from "../components/navBar/Navigation";
+import Tabs from '../components/FeatureTabs/Tabs';
 import styles from '../styles/Home.module.scss'
 import BrandLift from '../public/assets/images/BrandLift-Desktop.png'
 import Sportpesa from '../public/assets/images/SportPesa.svg'
 import Cocacola from '../public/assets/images/CocaCola.svg'
 import EABL from '../public/assets/images/EABL.svg'
 import AudioAdMockup from '../public/assets/images/AudioAdMockup.png'
-import Tabs from '../components/FeatureTabs/Tabs';
+import TrustSvg from '../public/assets/images/Trust.svg'
+import AdBlockerSvg from '../public/assets/images/AdBlocker.svg'
+import GrowthSvg from '../public/assets/images/Growth.svg'
 
 const Home = () => {
     return (
@@ -80,6 +83,32 @@ const Home = () => {
 
                     <div className={styles.featuresMid}>
                         <Tabs />
+                    </div>
+
+                    <div className={styles.featuresBottom}>
+                        <div className={styles.featuresBottomContainer}>
+                            <div className={styles.featuresBottomContentBox}>
+                                <Image src={TrustSvg} alt="Trust Us" title='Trust Us' />
+                                <h3>Builds Trust</h3>
+                                <p>
+                                    Campaigns on Mdundo increase a brand’s brand lift score by an average of 27%
+                                </p>
+                            </div>
+                            <div className={styles.featuresBottomContentBox}>
+                                <Image src={AdBlockerSvg} alt="AdBlocker" title='We always play our ads' />
+                                <h3>Reaches a wider audience</h3>
+                                <p>
+                                    Up to 40% of Africans below the age of 34 years, use ad-blockers, our audio ads reach this audience. The ad is available offline!
+                                </p>
+                            </div>
+                            <div className={styles.featuresBottomContentBox}>
+                                <Image src={GrowthSvg} alt="Growth" title='We guarantee Growth' />
+                                <h3>Influence Consumer Decisions</h3>
+                                <p>
+                                    53% of consumers trust influencers, our audio ads are served in association with your target audience’s favorite musicians.
+                                </p>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </section>
