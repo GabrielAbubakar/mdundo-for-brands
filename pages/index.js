@@ -10,6 +10,7 @@ import AudioAdMockup from '../public/assets/images/AudioAdMockup.png'
 import TrustSvg from '../public/assets/images/Trust.svg'
 import AdBlockerSvg from '../public/assets/images/AdBlocker.svg'
 import GrowthSvg from '../public/assets/images/Growth.svg'
+import MapPng from '../public/assets/images/map.png'
 
 const Home = () => {
     return (
@@ -47,7 +48,7 @@ const Home = () => {
             </section>
 
 
-            {/* Case Studies */}
+            {/* Case Studies Section*/}
             <section className={styles.caseStudies} id="case-studies">
                 {/* <div className='widthContainer'> */}
                 <div className={styles.caseStudiesContainer}>
@@ -64,7 +65,7 @@ const Home = () => {
                 {/* </div> */}
             </section>
 
-            {/* Feature */}
+            {/* Features Section */}
             <section className={styles.feature} id='feature'>
                 <div className={styles.featuresContainer}>
                     <div className={styles.featuresTop}>
@@ -109,6 +110,27 @@ const Home = () => {
                                 </p>
                             </div>
                         </div>
+                    </div>
+                </div>
+            </section>
+
+            {/* Statistics Section*/}
+            <section className={styles.statistics} id="statistics">
+                <div className={styles.statisticsContainer}>
+                    <div className={styles.statisticsContent}>
+                        <h2>We have a young, <br /> highly engaged audience!</h2>
+                        <p>
+                            Get in touch with us to capture the attention of your target audience with maximum impact, Today!
+                        </p>
+                        <div className={styles.statisticsButtons}>
+                            <a href="#touch">Get in Touch</a>
+                            <a href="#numbers">View Q4 numers here</a>
+                        </div>
+                    </div>
+                    <div className={styles.statisticsImgBox}>
+                        <Image src={MapPng} alt='map of africa' />
+                        {/* <img src={Map} alt="map" /> */}
+                        {/* <SvgMap /> */}
                     </div>
                 </div>
             </section>
