@@ -1,0 +1,89 @@
+.tabContent {
+    background-color: #525252;
+    color: #fff;
+    padding: 1rem 2.5rem 0 7rem;
+    display: flex;
+    gap: 5rem;
+}
+
+.tabContent>* {
+    flex: 1;
+}
+
+.tabContentContainer {
+    align-self: center;
+}
+
+.tabContentContainer h2 {
+    font-family: 'Azo Sans Bd', 'Open Sans', sans-serif;
+    font-size: 40px;
+    font-weight: 700;
+    line-height: 45px;
+    letter-spacing: 0px;
+    text-align: left;
+    text-transform: uppercase;
+}
+
+.tabContentContainer h3 {
+    font-family: 'Azo Sans Bd', 'Open Sans', sans-serif;
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 45px;
+    letter-spacing: 0px;
+    text-align: left;
+    color: rgba(255, 255, 255, 0.5);
+    text-transform: uppercase;
+}
+
+.tabContentContainer p {
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 30px;
+    letter-spacing: -0.6252632141113281px;
+    text-align: left;
+    margin-bottom: 2rem;
+}
+
+.buttonGroup {
+    display: flex;
+    gap: 2rem;
+}
+
+.buttonGroup>*:first-of-type {
+    font-family: 'Azo Sans Bd', 'Open Sans', sans-serif;
+    display: inline-block;
+    background-color: #FF8C00;
+    color: #FFFFFF;
+    font-size: 1.0625rem;
+    text-transform: uppercase;
+    border-radius: .6rem;
+    font-weight: 700;
+    text-decoration: none;
+    padding: 1rem 3rem;
+    transition: all .2s ease;
+}
+
+.buttonGroup>*:last-of-type {
+    font-family: 'Azo Sans Bd', 'Open Sans', sans-serif;
+    display: inline-block;
+    color: #FFFFFF;
+    font-size: 1.0625rem;
+    text-transform: uppercase;
+    border-radius: .6rem;
+    font-weight: 700;
+    text-decoration: none;
+    transition: all .2s ease;
+    align-self: center;
+}
+
+.buttonGroup>*:hover {
+    transform: translateY(-1px);
+}
+
+.tabImgContainer {
+    display: flex;
+}
+
+.tabImgContainer>*:first-of-type {
+    align-self: center;
+}

@@ -79,8 +79,6 @@ const Home = () => {
                     </div>
 
                     <div className={styles.featuresMid}>
-                        <p>See our audio ads in action for these brands</p>
-
                         <Tabs />
                     </div>
                 </div>

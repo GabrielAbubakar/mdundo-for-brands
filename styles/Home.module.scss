@@ -31,7 +31,7 @@
 .homeTextCta {
     display: flex;
     gap: 2rem;
-    margin-bottom: 3rem;
+    margin-bottom: 4rem;
 }
 
 .homeTextCta a {
@@ -140,7 +140,7 @@
 
 //Feature Section
 .feature {
-    padding: 4rem 0rem 4rem 7rem;
+    padding: 4rem 0rem 4rem 0rem;
 }
 
 .featuresContainer {}
@@ -148,6 +148,8 @@
 .featuresTop {
     display: flex;
     justify-content: space-between;
+    padding-left: 7rem;
+    margin-bottom: 7rem;
 
     &>* {
         flex: 1;

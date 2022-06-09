@@ -1,0 +1,50 @@
+.userBrands {
+
+
+    &>p {
+        font-size: 1.25rem;
+        margin-bottom: 5rem;
+        text-align: center;
+    }
+}
+
+.brandsNav {
+    display: flex;
+    justify-content: space-between;
+    width: 55%;
+    margin: 0 auto;
+}
+
+.brandsNav li {
+    list-style-type: none;
+    padding-bottom: 6rem;
+    position: relative;
+}
+
+// .active::active {
+//     // content: '';
+//     position: absolute;
+//     left: 20%;
+//     bottom: 0;
+//     width: 0;
+//     height: 0;
+//     border-left: 20px solid transparent;
+//     border-right: 20px solid transparent;
+
+//     border-bottom: 25px solid #525252;
+// }
+
+// .brandsNav li::after {}
+
+.brandsNav li.active::after {
+    content: '';
+    position: absolute;
+    left: 20%;
+    bottom: 0;
+    width: 0;
+    height: 0;
+    border-left: 20px solid transparent;
+    border-right: 20px solid transparent;
+
+    border-bottom: 25px solid #525252;
+}
