@@ -269,9 +269,9 @@
 }
 
 .statisticsContent p {
+    font-family: 'Azo Sans Md', 'Open Sans', sans-serif;
     line-height: 30px;
     font-size: 1.125rem;
-    font-weight: 500;
     margin-bottom: 1rem;
 }
 
@@ -307,4 +307,41 @@
 .contact__buttons {
     display: flex;
     /* gap: .2rem; */
+}
+
+
+//Clients Section
+.clients {}
+
+.clientsContainer {
+    padding-top: 8rem;
+    padding-inline: 7rem;
+}
+
+.clientsLogos {
+
+    h2 {
+        color: #333333;
+        font-size: 2.5rem;
+        font-family: 'Azo Sans Bd', 'Open Sans', sans-serif;
+        text-transform: uppercase;
+        margin-bottom: 2rem;
+    }
+
+    p {
+        margin-bottom: 3rem;
+        font-family: 'Azo Sans Md', 'Open Sans', sans-serif;
+        font-size: 1.125rem;
+    }
+}
+
+.clientsLogosGrid {
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+
+    &>* {
+        display: flex;
+        justify-content: space-between;
+    }
 }

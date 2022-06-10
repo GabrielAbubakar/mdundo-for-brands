@@ -12,6 +12,9 @@ import AdBlockerSvg from '../public/assets/images/AdBlocker.svg'
 import GrowthSvg from '../public/assets/images/Growth.svg'
 import MapPng from '../public/assets/images/map.png'
 
+
+
+
 const Home = () => {
     return (
         <div>
@@ -131,6 +134,43 @@ const Home = () => {
                         <Image src={MapPng} alt='map of africa' />
                         {/* <img src={Map} alt="map" /> */}
                         {/* <SvgMap /> */}
+                    </div>
+                </div>
+            </section>
+
+
+            {/* Clients Section */}
+            <section className={styles.clients} id="clients">
+                <div className={styles.clientsContainer}>
+                    <div className={styles.clientsLogos}>
+                        <h2>Who we work with</h2>
+                        <p>
+                            We have been trusted by the biggest brands and agencies <br /> across Africa…
+                        </p>
+
+                        <div className={styles.clientsLogosGrid}>
+                            <div>
+                                <Image src={EABL} alt="eabl" width={106} height={64} />
+                                <Image src={Cocacola} alt="eabl" width={106} height={64} />
+                                <Image src={Sportpesa} alt="eabl" width={136} height={64} />
+                                <Image src={Cocacola} alt="eabl" width={106} height={64} />
+                                <Image src={EABL} alt="eabl" width={106} height={64} />
+                            </div>
+                            <div>
+                                <Image src={EABL} alt="eabl" width={106} height={64} />
+                                <Image src={Cocacola} alt="eabl" width={106} height={64} />
+                                <Image src={Sportpesa} alt="eabl" width={136} height={64} />
+                                <Image src={Cocacola} alt="eabl" width={106} height={64} />
+                                <Image src={EABL} alt="eabl" width={106} height={64} />
+                            </div>
+                            <div>
+                                <Image src={EABL} alt="eabl" width={106} height={64} />
+                                <Image src={Cocacola} alt="eabl" width={106} height={64} />
+                                <Image src={Sportpesa} alt="eabl" width={136} height={64} />
+                                <Image src={Cocacola} alt="eabl" width={106} height={64} />
+                                <Image src={EABL} alt="eabl" width={106} height={64} />
+                            </div>
+                        </div>
                     </div>
                 </div>
             </section>
