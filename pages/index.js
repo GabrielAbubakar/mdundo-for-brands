@@ -172,6 +172,35 @@ const Home = () => {
                             </div>
                         </div>
                     </div>
+
+                    <div className={styles.clientsTestimonials}>
+                        <h2>What People Say about Us</h2>
+                        <div className={styles.clientsTestimonialsContainer}>
+                            <div className={styles.clientsTestimonialsCard}>
+                                <p>
+                                    Mdundo is a flexible partner with a great understanding of the marketing challenges our clients are facing. Mdundo offers innovative and creative solutions to ensure we deliver results
+                                </p>
+                                <p>
+                                    Managing <br /> Partner
+                                </p>
+                            </div>
+                            <div className={styles.clientsTestimonialsCard}>
+                                <p>
+                                    Mdundo provided us with a very result-driven platform creating a good balance of awareness and lead-generation for our new brand                                </p>
+                                <p>
+                                    Managing <br /> Manager
+                                </p>
+                            </div>
+                            <div className={styles.clientsTestimonialsCard}>
+                                <p>
+                                    Mdundo worked hard with us to define the brief and gave us a channel to reach a key target audience for the new campaign to launch our new digital platform
+                                </p>
+                                <p>
+                                    Director of Digital <br /> Marketing, Africa
+                                </p>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </section>
 

@@ -319,6 +319,7 @@
 }
 
 .clientsLogos {
+    margin-bottom: 10rem;
 
     h2 {
         color: #333333;
@@ -343,5 +344,46 @@
     &>* {
         display: flex;
         justify-content: space-between;
+    }
+}
+
+.clientsTestimonials {
+
+    h2 {
+        color: #FF8C00;
+        text-transform: uppercase;
+        font-family: 'Azo Sans Bd', 'Open Sans', sans-serif;
+        font-size: 2.5rem;
+        margin-bottom: 5rem;
+    }
+}
+
+.clientsTestimonialsContainer {
+    display: flex;
+    justify-content: space-between;
+    gap: 7rem;
+
+    &>* {
+        flex: 1;
+    }
+}
+
+.clientsTestimonialsCard {
+    border: 1px solid rgba(0, 0, 0, .1);
+    padding: 3rem;
+    border-radius: .9rem;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+
+    & p:first-of-type {
+        color: #000000;
+        margin-bottom: 3rem;
+        line-height: 25px;
+        text-transform: capitalize;
+    }
+
+    & p:last-of-type {
+        line-height: 20px;
     }
 }
