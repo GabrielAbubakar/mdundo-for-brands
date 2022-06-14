@@ -23,6 +23,18 @@
 }
 
 @font-face {
+    font-family: 'Azo Sans Lt';
+    src: url('../public/assets/font/AzoSans-Light.eot');
+    src: local('Azo Sans Light'), local('AzoSans-Light'),
+        url('../public/assets/font/AzoSans-Light.eot') format('embedded-opentype'),
+        url('../public/assets/font/AzoSans-Light.woff2') format('woff2'),
+        url('../public/assets/font/AzoSans-Light.woff') format('woff'),
+        url('../public/assets/font/AzoSans-Light.ttf') format('truetype');
+    font-weight: 300;
+    font-style: normal;
+}
+
+@font-face {
     font-family: 'Azo Sans Bk';
     src: url('../public/assets/font/AzoSans-Black.eot');
     src: local('Azo Sans Black'), local('AzoSans-Black'),
@@ -81,10 +93,13 @@ body {
     font-family: 'Azo Sans', 'Open Sans', sans-serif;
     color: #696871;
     padding-bottom: 30rem;
-    line-height: 30px;
 }
 
 .widthContainer {
     max-width: 1440px;
     margin: 0 auto;
+}
+
+p {
+    line-height: 30px;
 }
