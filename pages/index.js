@@ -11,6 +11,7 @@ import TrustSvg from '../public/assets/images/Trust.svg'
 import AdBlockerSvg from '../public/assets/images/AdBlocker.svg'
 import GrowthSvg from '../public/assets/images/Growth.svg'
 import MapPng from '../public/assets/images/map.png'
+import RachelPng from '../public/assets/images/RachelMdundo.png'
 
 
 
@@ -200,6 +201,43 @@ const Home = () => {
                                 </p>
                             </div>
                         </div>
+                    </div>
+                </div>
+            </section>
+
+            {/* Team Section */}
+            <section className={styles.team} id="team">
+                <h2>The Team</h2>
+                <div className={styles.teamContainer}>
+                    <div className={styles.teamMemberCard}>
+                        <figure>
+                            <Image src={RachelPng} alt="team member" />
+                        </figure>
+                        <h3>Rachel Karanu</h3>
+                        <h4>Head of Brand Partnerships, <br /> Africa</h4>
+                        <p>
+                            rachel@mdundo.com
+                        </p>
+                    </div>
+                    <div className={styles.teamMemberCard}>
+                        <figure>
+                            <Image src={RachelPng} alt="team member" />
+                        </figure>
+                        <h3>Vivian Njeri</h3>
+                        <h4>Head of Sales, <br /> Kenya</h4>
+                        <p>
+                            vivian@mdundo.com
+                        </p>
+                    </div>
+                    <div className={styles.teamMemberCard}>
+                        <figure>
+                            <Image src={RachelPng} alt="team member" />
+                        </figure>
+                        <h3>Thelma Areh</h3>
+                        <h4>Head of Brand Partnerships, Nigeria</h4>
+                        <p>
+                            thelma@mdundo.com
+                        </p>
                     </div>
                 </div>
             </section>
