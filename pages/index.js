@@ -242,6 +242,26 @@ const Home = () => {
                 </div>
             </section>
 
+            <section className={styles.events} id="events">
+                <div className={styles.eventsContainer}>
+                    <h2>Events</h2>
+                    <div className={styles.eventsVideoCarousel}>
+                        <div className={styles.eventsVideoCard}>
+
+                        </div>
+                        <div className={styles.eventsVideoCard}>
+
+                        </div>
+                    </div>
+                    <div className={styles.eventsText}>
+                        <h3 >
+                            groW YOUR BRAND in africa&apos;s <br />
+                            biggest marketS TODAY, <a href="#">GET IN tOUCH</a>
+                        </h3>
+                    </div>
+                </div>
+            </section>
+
 
         </div>
     )
