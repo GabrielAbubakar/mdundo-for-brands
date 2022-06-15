@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans&display=swap');
+
 .home {
     background-color: #f3f3f3;
     padding: 5rem 0 7rem 0;
@@ -445,7 +447,7 @@
 .events {}
 
 .eventsContainer {
-    padding: 5rem 0 3rem 7rem;
+    padding: 5rem 0 0 7rem;
     background-color: #F9F9F9;
 
     h2 {
@@ -461,7 +463,8 @@
         text-align: center;
         font-size: 1.75rem;
         font-family: 'Azo Sans Bd', 'Open Sans', sans-serif;
-        padding: 6rem 0;
+        padding: 8rem 0;
+        line-height: 35.15px;
 
 
         a {
@@ -501,4 +504,63 @@
 
     height: 350px;
     background-color: #696871;
+}
+
+
+//Footer Section
+.footer {
+    background-color: #232323;
+}
+
+.footerContainer {
+    padding: 7rem 7rem;
+
+    p {
+        text-align: right;
+    }
+}
+
+.footerContentContainer {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 4rem;
+}
+
+.footerNavigation {
+    display: flex;
+    gap: 7rem;
+    margin-right: auto;
+    margin-left: 11rem;
+
+    h4 {
+        margin-bottom: 1rem;
+        text-transform: uppercase;
+    }
+
+    li {
+        list-style-type: none;
+        font-size: 1.0625rem;
+        line-height: 20.4px;
+        margin-bottom: .5rem;
+
+        a {
+            color: #ffffff;
+            text-decoration: none;
+
+            &:hover {
+                color: #FF8C00;
+            }
+        }
+    }
+
+
+}
+
+.footerSocialLinks {
+    display: flex;
+    gap: 3.5rem;
+}
+
+.footerCopyright {
+    font-family: 'DM Sans', sans-serif;
 }
