@@ -9,7 +9,7 @@ import VodaPosterSm from "../../public/assets/images/VodacomSmall.png"
 import styles from '../../styles/Tabs.module.scss'
 
 const Tabs = () => {
-    const [activeTab, setActiveTab] = useState("");
+    const [activeTab, setActiveTab] = useState("tab1");
 
     return (
         <div className={styles.userBrands}>
