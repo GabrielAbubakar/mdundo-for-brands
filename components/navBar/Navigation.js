@@ -10,6 +10,7 @@ const Navigation = () => {
     const [navOpen, setNavOpen] = useState(false)
 
 
+
     return (
         <div className={styles.navigation__container}>
             {/* <div className="widthContainer"> */}
@@ -21,11 +22,14 @@ const Navigation = () => {
                     </a>
                 </Link>
                 <ul className={styles.navigation__links}>
-                    <li>
-                        <a href="#home">
+                    {/* <li> */}
+                    <li onMouseEnter={() => setNavOpen(!navOpen)} onMouseLeave={() => setNavOpen(!navOpen)}>
+                        <a href="#home" >
                             Resources
                         </a>
-                        <ul className={styles.hoverNavigation} style={{ display: navOpen ? 'block' : 'none' }}>
+                        <ul className={styles.hoverNavigation}
+                            style={{ display: navOpen ? 'block' : 'none' }}
+                        >
                             <li><a href="#">Case Studies</a></li>
                             <li><a href="#">Contact Us</a></li>
                             <li><a href="#">FAQs</a></li>
