@@ -1,8 +1,9 @@
 import Image from 'next/image'
+import Head from 'next/head'
 import Navigation from "../components/navBar/Navigation";
 import Tabs from '../components/FeatureTabs/Tabs';
 import styles from '../styles/Home.module.scss'
-import BrandLift from '../public/assets/images/BrandLift-Desktop.png'
+import BrandLift from '../public/assets/images/ProductShots.png'
 import Sportpesa from '../public/assets/images/SportPesa.svg'
 import Cocacola from '../public/assets/images/CocaCola.svg'
 import EABL from '../public/assets/images/EABL.svg'
@@ -13,16 +14,19 @@ import GrowthSvg from '../public/assets/images/Growth.svg'
 import MapPng from '../public/assets/images/map.png'
 import RachelPng from '../public/assets/images/RachelMdundo.png'
 import MdundoLogoSvg from '../public/assets/images/mdundoLogoDark.svg'
-import InstagramSvg from '../public/assets/images/instagram.svg'
-import FacebookSvg from '../public/assets/images/facebook.svg'
-import TwitterSvg from '../public/assets/images/twitter.svg'
+// import InstagramSvg from '../public/assets/images/instagram.svg'
+// import FacebookSvg from '../public/assets/images/facebook.svg'
+// import TwitterSvg from '../public/assets/images/twitter.svg'
 
 
 
 
 const Home = () => {
     return (
-        <div>
+        <>
+            <Head>
+                <title>Mdundo for Brands</title>
+            </Head>
             <Navigation />
 
 
@@ -49,12 +53,11 @@ const Home = () => {
                     </div>
 
                     <div className={styles.homeImgContainer}>
-                        <Image src={BrandLift} alt="bradlift desktop " width={944} height={577} />
+                        <Image src={BrandLift} alt="bradlift desktop" width={982} height={645} />
                     </div>
                 </div>
                 {/* </div> */}
             </section>
-
 
             {/* Case Studies Section*/}
             <section className={styles.caseStudies} id="case-studies">
@@ -142,7 +145,6 @@ const Home = () => {
                     </div>
                 </div>
             </section>
-
 
             {/* Clients Section */}
             <section className={styles.clients} id="clients">
@@ -246,15 +248,22 @@ const Home = () => {
                 </div>
             </section>
 
+            {/* Events Section */}
             <section className={styles.events} id="events">
                 <div className={styles.eventsContainer}>
                     <h2>Events</h2>
                     <div className={styles.eventsVideoCarousel}>
                         <div className={styles.eventsVideoCard}>
-
+                            <iframe width='100%' height='100%' src="https://www.youtube.com/embed/gaaTve1xLvQ" title="YouTube video player" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowFullScreen></iframe>
                         </div>
                         <div className={styles.eventsVideoCard}>
-
+                            <iframe width='100%' height="100%" src="https://www.youtube.com/embed/ArB3gEPc1I4" title="YouTube video player" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowFullScreen></iframe>
+                        </div>
+                        <div className={styles.eventsVideoCard}>
+                            <iframe width='100%' height='100%' src="https://www.youtube.com/embed/gaaTve1xLvQ" title="YouTube video player" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowFullScreen></iframe>
+                        </div>
+                        <div className={styles.eventsVideoCard}>
+                            <iframe width='100%' height="100%" src="https://www.youtube.com/embed/ArB3gEPc1I4" title="YouTube video player" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowFullScreen></iframe>
                         </div>
                     </div>
                     <div className={styles.eventsText}>
@@ -266,6 +275,7 @@ const Home = () => {
                 </div>
             </section>
 
+            {/* Footer Section */}
             <footer className={styles.footer} id="footer">
                 <div className={styles.footerContainer}>
                     <div className={styles.footerContentContainer}>
@@ -338,7 +348,7 @@ const Home = () => {
                     <p className={styles.footerCopyright}>Copyright © 2021 Mdundo. All rights reserved.</p>
                 </div>
             </footer>
-        </div>
+        </>
     )
 }
 

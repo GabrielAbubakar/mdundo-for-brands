@@ -82,6 +82,11 @@
 .homeImgContainer {
     flex: 1;
     margin-top: -2rem;
+
+    & img {
+        width: 100%;
+        height: auto;
+    }
 }
 
 
