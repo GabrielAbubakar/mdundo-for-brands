@@ -38,7 +38,6 @@ const Navigation = () => {
                     <a href='#none' className={styles.navigation__button}>Sign Up</a>
                 </ul>
 
-
             </nav>
             {/* </div> */}
         </div>
