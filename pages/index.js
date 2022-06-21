@@ -3,6 +3,7 @@ import Head from 'next/head'
 import Navigation from "../components/navBar/Navigation";
 import Tabs from '../components/FeatureTabs/Tabs';
 import styles from '../styles/Home.module.scss'
+//Assets
 import BrandLift from '../public/assets/images/ProductShots2.png'
 import Sportpesa from '../public/assets/images/SportPesa.svg'
 import Cocacola from '../public/assets/images/CocaCola.svg'
@@ -14,9 +15,6 @@ import GrowthSvg from '../public/assets/images/Growth.svg'
 import MapPng from '../public/assets/images/map.png'
 import RachelPng from '../public/assets/images/RachelMdundo.png'
 import MdundoLogoSvg from '../public/assets/images/mdundoLogoDark.svg'
-// import InstagramSvg from '../public/assets/images/instagram.svg'
-// import FacebookSvg from '../public/assets/images/facebook.svg'
-// import TwitterSvg from '../public/assets/images/twitter.svg'
 
 
 
