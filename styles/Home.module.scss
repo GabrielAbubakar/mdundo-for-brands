@@ -4,6 +4,11 @@
 .home {
     background-color: #f3f3f3;
     padding: 5rem 0 7rem 0;
+
+
+    @include respond(tab-port) {
+        background-color: #ffffff;
+    }
 }
 
 .homeContainer {
@@ -29,11 +34,11 @@
 
     @include respond(tab-port) {
         // order: 2;
-        padding-left: 4rem;
+        padding-inline: 4rem;
     }
 
     @include respond(phone) {
-        padding-left: 2rem;
+        padding-inline: 1.5rem;
     }
 }
 
@@ -48,11 +53,6 @@
 
 
 
-    @include respond(phone) {
-        margin-bottom: 2rem;
-        font-size: 1.5625rem;
-        line-height: 32.7px;
-    }
 
     @include respond(tab-port) {
         margin-bottom: 2rem;
@@ -60,7 +60,11 @@
 
     }
 
-    @include respond(tab-port) {}
+    @include respond(phone) {
+        margin-bottom: 1.5rem;
+        font-size: 1.5625rem;
+        line-height: 32.7px;
+    }
 }
 
 .homeTextContent p {
@@ -71,6 +75,13 @@
         margin-bottom: 2rem;
         line-height: 21px;
     }
+
+    @include respond(phone) {
+        font-size: 0.875rem;
+    }
+
+
+
 }
 
 .homeTextContent h1 span {
@@ -81,6 +92,18 @@
     display: flex;
     gap: 2rem;
     margin-bottom: 4rem;
+
+    @include respond(phone) {
+        gap: 1rem;
+        margin-bottom: 2rem;
+        // justify-content: space-between;
+    }
+
+    &>* {
+        // flex: 1;
+    }
+
+
 }
 
 .homeTextCta a {
@@ -90,19 +113,38 @@
     border-radius: .6rem;
     font-weight: 700;
     text-decoration: none;
-    padding: 1rem 2rem;
+    padding: 1rem 0;
     transition: all .2s ease;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    @include respond(tab-port) {
+        font-size: 0.625rem;
+    }
+
+    & span {
+
+        @include respond(phone) {
+            display: none;
+        }
+    }
 }
 
 .homeTextCta a:first-of-type {
     background-color: #FF8C00;
     color: #ffffff;
+    padding-inline: 3rem;
+
+    @include respond(phone) {
+        padding-inline: 2.7rem;
+    }
 }
 
 .homeTextCta a:last-of-type {
     background-color: transparent;
     color: #FF8C00;
-    padding: 0;
+    // padding: 0;
     align-self: center;
 
     &:hover {
@@ -117,13 +159,24 @@
 .homeTextUsers {
 
     p {
+        display: block;
         margin-bottom: 1rem;
+
+        @include respond(phone) {
+            font-size: 0.641875rem;
+        }
     }
 }
 
 .userLogos {
     display: flex;
     gap: 3rem;
+
+
+    @include respond(tab-port) {
+        gap: .5rem;
+        max-height: 30px;
+    }
 }
 
 .homeImgContainer {
@@ -146,6 +199,7 @@
 
 
     @include respond(phone) {
+        // min-height: 250px;
         // transform: translateX(-20%);
     }
 
@@ -662,6 +716,7 @@
 
     @include respond(phone) {
         flex-direction: column;
+        margin-left: 0;
     }
 
     h4 {

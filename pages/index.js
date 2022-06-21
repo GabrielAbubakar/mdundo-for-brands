@@ -42,7 +42,7 @@ const Home = () => {
                             Increase brand awareness, expand your audience, and boost foot traffic, among other things. Track the impact of your ad and gain insights on delivery and audience engagement.
                         </p>
                         <div className={styles.homeTextCta}>
-                            <a href="#try">Try Now (Free)</a>
+                            <a href="#try">Try Now <span>(Free)</span></a>
                             <a href="#vid">Watch Introductory Video</a>
                         </div>
                         <div className={styles.homeTextUsers}>
