@@ -9,12 +9,32 @@
 .homeContainer {
     margin-left: 7rem;
     display: flex;
+
+    @include respond(tab-land) {
+        flex-direction: column-reverse;
+        margin-left: 4rem;
+        // margin-left: 3rem;
+    }
+
+    @include respond(tab-port) {
+        flex-direction: column-reverse;
+        margin-left: 0;
+    }
 }
 
 .homeTextContent {
     align-self: center;
     flex: .6;
     margin-top: 1rem;
+
+    @include respond(tab-port) {
+        // order: 2;
+        padding-left: 4rem;
+    }
+
+    @include respond(phone) {
+        padding-left: 2rem;
+    }
 }
 
 .homeTextContent h1 {
@@ -25,6 +45,32 @@
     text-transform: uppercase;
     color: #333333;
     margin-bottom: 2.5rem;
+
+
+
+    @include respond(phone) {
+        margin-bottom: 2rem;
+        font-size: 1.5625rem;
+        line-height: 32.7px;
+    }
+
+    @include respond(tab-port) {
+        margin-bottom: 2rem;
+        font-size: 2rem;
+
+    }
+
+    @include respond(tab-port) {}
+}
+
+.homeTextContent p {
+    display: none;
+
+    @include respond(tab-port) {
+        display: block;
+        margin-bottom: 2rem;
+        line-height: 21px;
+    }
 }
 
 .homeTextContent h1 span {
@@ -88,6 +134,21 @@
         width: 100%;
         height: auto;
     }
+
+
+    @include respond(tab-land) {
+        transform: translateX(-10%);
+    }
+
+    @include respond(tab-port) {
+        transform: translateX(-3%);
+    }
+
+
+    @include respond(phone) {
+        // transform: translateX(-20%);
+    }
+
 }
 
 
@@ -103,6 +164,10 @@
     display: flex;
     justify-content: space-between;
 
+    @include respond(tab-port) {
+        flex-direction: column;
+    }
+
 
 
     h2 {
@@ -115,10 +180,16 @@
         color: #333333;
         align-items: center;
         margin-top: 2rem;
+
+
     }
 }
 
 .caseStudiesLeft {
+
+    @include respond(tab-port) {
+        order: 2;
+    }
 
     p {
         font-family: 'Azo Sans';
@@ -159,6 +230,10 @@
     padding-left: 7rem;
     margin-bottom: 7rem;
 
+    @include respond(tab-port) {
+        flex-direction: column;
+    }
+
     &>* {
         flex: 1;
     }
@@ -166,6 +241,10 @@
 
 .featuresContent {
     align-self: center;
+
+    @include respond(tab-port) {
+        order: 2;
+    }
 }
 
 .featuresContent h3 {
@@ -219,7 +298,12 @@
     transform: translateY(-1px);
 }
 
-// .featuresMid {}
+.featuresMid {
+
+    @include respond(tab-port) {
+        display: none;
+    }
+}
 
 .featuresBottom {
     padding: 6rem 7rem;
@@ -231,6 +315,10 @@
     display: flex;
     justify-content: space-between;
     gap: 8rem;
+
+    @include respond(tab-port) {
+        flex-direction: column;
+    }
 
     &>* {
         flex: 1;
@@ -258,6 +346,10 @@
 
 .statisticsContainer {
     display: flex;
+
+    @include respond(tab-port) {
+        padding: 3rem 0 5rem 0;
+    }
 }
 
 .statisticsContent {
@@ -317,6 +409,14 @@
     /* gap: .2rem; */
 }
 
+.statisticsImgBox {
+
+
+    @include respond(tab-port) {
+        display: none;
+    }
+}
+
 
 //Clients Section
 // .clients {}
@@ -371,6 +471,11 @@
     justify-content: space-between;
     gap: 7rem;
 
+    @include respond(tab-port) {
+        overflow: scroll;
+        gap: 2rem;
+    }
+
     &>* {
         flex: 1;
     }
@@ -383,6 +488,12 @@
     display: flex;
     justify-content: center;
     flex-direction: column;
+
+    @include respond(tab-port) {
+        padding: 3rem 2rem;
+    }
+
+
 
     & p:first-of-type {
         color: #000000;
@@ -415,6 +526,11 @@
     padding-inline: 7rem;
     display: flex;
     justify-content: space-between;
+
+
+    @include respond(tab-port) {
+        flex-direction: column;
+    }
 }
 
 .teamMemberCard {
@@ -530,6 +646,11 @@
     display: flex;
     justify-content: space-between;
     margin-bottom: 4rem;
+
+
+    @include respond(tab-port) {
+        flex-direction: column;
+    }
 }
 
 .footerNavigation {
@@ -537,6 +658,11 @@
     gap: 7rem;
     margin-right: auto;
     margin-left: 11rem;
+
+
+    @include respond(phone) {
+        flex-direction: column;
+    }
 
     h4 {
         margin-bottom: 1rem;

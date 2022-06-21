@@ -11,6 +11,11 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
+
+
+    @include respond(tab-land) {
+        padding: 1rem 4rem;
+    }
 }
 
 

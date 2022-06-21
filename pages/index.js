@@ -36,8 +36,11 @@ const Home = () => {
                 <div className={styles.homeContainer}>
                     <div className={styles.homeTextContent}>
                         <h1>
-                            Find out how your brand is performing <br /> in <span>Africa&apos;s biggest consumer market</span>
+                            Find out how your brand is performing in <span>Africa&apos;s biggest consumer market</span>
                         </h1>
+                        <p>
+                            Increase brand awareness, expand your audience, and boost foot traffic, among other things. Track the impact of your ad and gain insights on delivery and audience engagement.
+                        </p>
                         <div className={styles.homeTextCta}>
                             <a href="#try">Try Now (Free)</a>
                             <a href="#vid">Watch Introductory Video</a>
@@ -55,6 +58,10 @@ const Home = () => {
                     <div className={styles.homeImgContainer}>
                         <Image src={BrandLift} alt="bradlift desktop" width={982} height={645} />
                     </div>
+
+                    {/* <div className={styles.homeImgContainer2}>
+                        <Image src={BrandLift} alt="bradlift desktop" width={982} height={645} />
+                    </div> */}
                 </div>
                 {/* </div> */}
             </section>
