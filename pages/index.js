@@ -3,11 +3,11 @@ import Head from 'next/head'
 import Navigation from "../components/navBar/Navigation";
 import Tabs from '../components/FeatureTabs/Tabs';
 import styles from '../styles/Home.module.scss'
-import BrandLift from '../public/assets/images/ProductShots.png'
+import BrandLift from '../public/assets/images/ProductShots2.png'
 import Sportpesa from '../public/assets/images/SportPesa.svg'
 import Cocacola from '../public/assets/images/CocaCola.svg'
 import EABL from '../public/assets/images/EABL.svg'
-import AudioAdMockup from '../public/assets/images/AudioAdMockup.png'
+import AudioAdMockup from '../public/assets/images/AudioAd2.png'
 import TrustSvg from '../public/assets/images/Trust.svg'
 import AdBlockerSvg from '../public/assets/images/AdBlocker.svg'
 import GrowthSvg from '../public/assets/images/Growth.svg'
@@ -56,7 +56,12 @@ const Home = () => {
                     </div>
 
                     <div className={styles.homeImgContainer}>
-                        <Image src={BrandLift} alt="bradlift desktop" width={982} height={645} />
+                        <Image src={BrandLift} alt="bradlift desktop"
+                            width={982}
+                            height={645}
+                            placeholder="blur"
+                            quality={100}
+                            priority />
                     </div>
 
                     {/* <div className={styles.homeImgContainer2}>
@@ -94,7 +99,7 @@ const Home = () => {
                                 5-10 second Audio Ad, played just before your target audience listens to their favorite song!
                             </p>
                         </div>
-                        <Image src={AudioAdMockup} alt="audio ad phone" width={716} height={670} />
+                        <Image src={AudioAdMockup} alt="audio ad phone" width={716} height={670} placeholder="blur" quality={100} />
 
                         {/* <div className={styles.featuresImgBox}>
                         </div> */}
