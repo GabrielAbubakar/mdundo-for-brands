@@ -15,6 +15,7 @@ import GrowthSvg from '../public/assets/images/Growth.svg'
 import MapPng from '../public/assets/images/map.png'
 import RachelPng from '../public/assets/images/RachelMdundo.png'
 import MdundoLogoSvg from '../public/assets/images/mdundoLogoDark.svg'
+import NigerianFlag from '../public/assets/images/NigerianFlag.svg'
 
 
 
@@ -149,6 +150,42 @@ const Home = () => {
                         <p>
                             Get in touch with us to capture the attention of your target audience with maximum impact, Today!
                         </p>
+
+                        <div className={styles.statisticsCountriesCarousel}>
+                            <div className={styles.statisticsCountriesBox}>
+                                <div>
+                                    <Image src={NigerianFlag} alt='nigerian Flag' />
+                                    <h4>Nigeria</h4>
+                                </div>
+                                <h3>8.7M</h3>
+                                <p>Annual Users</p>
+                            </div>
+                            <div className={styles.statisticsCountriesBox}>
+                                <div>
+                                    <Image src={NigerianFlag} alt='nigerian Flag' />
+                                    <h4>Nigeria</h4>
+                                </div>
+                                <h3>8.7M</h3>
+                                <p>Annual Users</p>
+                            </div>
+                            <div className={styles.statisticsCountriesBox}>
+                                <div className={styles.countriesHeader}>
+                                    <Image src={NigerianFlag} alt='nigerian Flag' />
+                                    <h4>Nigeria</h4>
+                                </div>
+                                <h3>8.7M</h3>
+                                <p>Annual Users</p>
+                            </div>
+                            <div className={styles.statisticsCountriesBox}>
+                                <div className={styles.countriesHeader}>
+                                    <Image src={NigerianFlag} alt='nigerian Flag' />
+                                    <h4>Nigeria</h4>
+                                </div>
+                                <h3>8.7M</h3>
+                                <p>Annual Users</p>
+                            </div>
+                        </div>
+
                         <div className={styles.statisticsButtons}>
                             <a href="#touch">Get in Touch</a>
                             <a href="#numbers">View Q4 numers here &gt;</a>
