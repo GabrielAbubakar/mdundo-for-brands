@@ -96,11 +96,12 @@ const Home = () => {
                             <p>
                                 5-10 second Audio Ad, played just before your target audience listens to their favorite song!
                             </p>
+                            <a href='#'>Listen</a>
                         </div>
-                        <Image src={AudioAdMockup} alt="audio ad phone" width={716} height={670} placeholder="blur" quality={100} />
 
-                        {/* <div className={styles.featuresImgBox}>
-                        </div> */}
+                        <div className={styles.featuresImgBox}>
+                            <Image src={AudioAdMockup} alt="audio ad phone" width={716} height={670} placeholder="blur" quality={100} />
+                        </div>
                     </div>
 
                     <div className={styles.featuresMid}>
@@ -110,21 +111,27 @@ const Home = () => {
                     <div className={styles.featuresBottom}>
                         <div className={styles.featuresBottomContainer}>
                             <div className={styles.featuresBottomContentBox}>
-                                <Image src={TrustSvg} alt="Trust Us" title='Trust Us' />
+                                <div className={styles.featuresBottomImg}>
+                                    <Image src={TrustSvg} alt="Trust Us" title='Trust Us' />
+                                </div>
                                 <h3>Builds Trust</h3>
                                 <p>
                                     Campaigns on Mdundo increase a brand’s brand lift score by an average of 27%
                                 </p>
                             </div>
                             <div className={styles.featuresBottomContentBox}>
-                                <Image src={AdBlockerSvg} alt="AdBlocker" title='We always play our ads' />
+                                <div className={styles.featuresBottomImg}>
+                                    <Image src={AdBlockerSvg} alt="AdBlocker" title='We always play our ads' />
+                                </div>
                                 <h3>Reaches a wider audience</h3>
                                 <p>
                                     Up to 40% of Africans below the age of 34 years, use ad-blockers, our audio ads reach this audience. The ad is available offline!
                                 </p>
                             </div>
                             <div className={styles.featuresBottomContentBox}>
-                                <Image src={GrowthSvg} alt="Growth" title='We guarantee Growth' />
+                                <div className={styles.featuresBottomImg}>
+                                    <Image src={GrowthSvg} alt="Growth" title='We guarantee Growth' />
+                                </div>
                                 <h3>Influence Consumer Decisions</h3>
                                 <p>
                                     53% of consumers trust influencers, our audio ads are served in association with your target audience’s favorite musicians.
