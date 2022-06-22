@@ -666,14 +666,19 @@
 }
 
 .statisticsCountriesCarousel {
-    display: grid;
-    grid-auto-flow: column;
-    grid-auto-columns: 167px;
-    gap: 1rem;
-    overflow-x: scroll;
-    overscroll-behavior-inline: contain;
-    scroll-snap-type: inline mandatory;
-    margin-bottom: 2rem;
+
+    display: none;
+
+    @include respond(tab-port) {
+        display: grid;
+        grid-auto-flow: column;
+        grid-auto-columns: 167px;
+        gap: 1rem;
+        overflow-x: scroll;
+        overscroll-behavior-inline: contain;
+        scroll-snap-type: inline mandatory;
+        margin-bottom: 2rem;
+    }
 }
 
 
