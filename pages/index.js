@@ -16,6 +16,7 @@ import MapPng from '../public/assets/images/map.png'
 import RachelPng from '../public/assets/images/RachelMdundo.png'
 import MdundoLogoSvg from '../public/assets/images/mdundoLogoDark.svg'
 import NigerianFlag from '../public/assets/images/NigerianFlag.svg'
+import CountryCard from '../components/CountryCard';
 
 
 
@@ -152,38 +153,12 @@ const Home = () => {
                         </p>
 
                         <div className={styles.statisticsCountriesCarousel}>
-                            <div className={styles.statisticsCountriesBox}>
-                                <div>
-                                    <Image src={NigerianFlag} alt='nigerian Flag' />
-                                    <h4>Nigeria</h4>
-                                </div>
-                                <h3>8.7M</h3>
-                                <p>Annual Users</p>
-                            </div>
-                            <div className={styles.statisticsCountriesBox}>
-                                <div>
-                                    <Image src={NigerianFlag} alt='nigerian Flag' />
-                                    <h4>Nigeria</h4>
-                                </div>
-                                <h3>8.7M</h3>
-                                <p>Annual Users</p>
-                            </div>
-                            <div className={styles.statisticsCountriesBox}>
-                                <div className={styles.countriesHeader}>
-                                    <Image src={NigerianFlag} alt='nigerian Flag' />
-                                    <h4>Nigeria</h4>
-                                </div>
-                                <h3>8.7M</h3>
-                                <p>Annual Users</p>
-                            </div>
-                            <div className={styles.statisticsCountriesBox}>
-                                <div className={styles.countriesHeader}>
-                                    <Image src={NigerianFlag} alt='nigerian Flag' />
-                                    <h4>Nigeria</h4>
-                                </div>
-                                <h3>8.7M</h3>
-                                <p>Annual Users</p>
-                            </div>
+                            <CountryCard flag={NigerianFlag} name="Nigeria" stat="8.7" />
+                            <CountryCard flag={NigerianFlag} name="Nigeria" stat="8.7" />
+                            <CountryCard flag={NigerianFlag} name="Nigeria" stat="8.7" />
+                            <CountryCard flag={NigerianFlag} name="Nigeria" stat="8.7" />
+                            <CountryCard flag={NigerianFlag} name="Nigeria" stat="8.7" />
+                            <CountryCard flag={NigerianFlag} name="Nigeria" stat="8.7" />
                         </div>
 
                         <div className={styles.statisticsButtons}>
