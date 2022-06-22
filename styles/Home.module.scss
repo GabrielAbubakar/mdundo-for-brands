@@ -6,9 +6,14 @@
     padding: 5rem 0 7rem 0;
 
 
+
     @include respond(tab-port) {
         background-color: #ffffff;
         padding: 2rem 0 5rem 0;
+    }
+
+    @include respond(phone) {
+        overflow-x: hidden;
     }
 }
 
@@ -189,6 +194,10 @@
     margin-top: -2rem;
     overflow-x: hidden;
 
+    // @include respond(phone) {
+    //     width: 412px;
+    // }
+
     & img {
         width: 100%;
         height: auto;
@@ -203,7 +212,6 @@
         // }
 
         // @include respond(phone) {
-        //     min-width: 400px;
         //     transform: translateX(-20px);
         // }
     }

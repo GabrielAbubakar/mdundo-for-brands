@@ -57,7 +57,6 @@ const Home = () => {
                         <Image src={BrandLift} alt="bradlift desktop"
                             width={982}
                             height={645}
-                            placeholder="blur"
                             quality={100}
                             priority />
                     </div>
