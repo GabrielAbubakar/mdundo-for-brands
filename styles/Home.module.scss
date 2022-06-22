@@ -557,8 +557,12 @@
 
 .statisticsContent {
     align-self: center;
-    margin-left: 7rem;
+    padding-left: 7rem;
 
+
+    @include respond(tab-port) {
+        padding-left: 1.5rem;
+    }
 }
 
 .statisticsContent h2 {
@@ -569,6 +573,12 @@
     line-height: 45px;
     margin-bottom: 1rem;
     max-width: 80%;
+
+    @include respond(phone) {
+        font-size: 1.5625rem;
+        line-height: 29px;
+        letter-spacing: 0px;
+    }
 }
 
 .statisticsContent p {
@@ -576,6 +586,12 @@
     line-height: 30px;
     font-size: 1.125rem;
     margin-bottom: 1rem;
+
+    @include respond(phone) {
+        font-size: 0.875rem;
+        line-height: 18px;
+        letter-spacing: -0.6252632141113281px;
+    }
 }
 
 .statisticsContent a {
@@ -599,23 +615,45 @@
     color: #FFFFFF;
     background-color: #953622;
     margin-right: 1rem;
+
+    @include respond(phone) {
+        font-size: 0.75rem;
+    }
 }
 
 .statisticsContent a:last-of-type {
+    font-family: 'Azo Sans Lt', 'Open Sans', sans-serif;
     color: #FFFFFF;
-    border: 2px solid #FFFFFF;
+    // border: 2px solid #FFFFFF;
     padding: 1rem 2rem;
+
+    @include respond(phone) {
+        font-size: 0.664375rem;
+    }
 }
 
-.contact__buttons {
-    display: flex;
-    /* gap: .2rem; */
+.statisticsButtons {
+
+    &>* {
+        // flex: 1;
+        // width: 100%;
+    }
+
+    @include respond(phone) {
+        display: flex;
+        justify-content: space-between;
+        padding-right: 1.5rem;
+    }
 }
 
 .statisticsImgBox {
 
 
     @include respond(tab-port) {
+        display: none;
+    }
+
+    @include respond(phone) {
         display: none;
     }
 }
@@ -764,8 +802,11 @@
 .teamMemberCard {
     text-align: center;
 
+
     figure {
         margin-bottom: 1.5rem;
+        border-radius: 50%;
+        overflow: hidden;
     }
 
 

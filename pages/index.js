@@ -151,13 +151,11 @@ const Home = () => {
                         </p>
                         <div className={styles.statisticsButtons}>
                             <a href="#touch">Get in Touch</a>
-                            <a href="#numbers">View Q4 numers here</a>
+                            <a href="#numbers">View Q4 numers here &gt;</a>
                         </div>
                     </div>
                     <div className={styles.statisticsImgBox}>
                         <Image src={MapPng} alt='map of africa' />
-                        {/* <img src={Map} alt="map" /> */}
-                        {/* <SvgMap /> */}
                     </div>
                 </div>
             </section>
@@ -243,7 +241,7 @@ const Home = () => {
                     </div>
                     <div className={styles.teamMemberCard}>
                         <figure>
-                            <Image src={RachelPng} alt="team member" />
+                            <Image src={RachelPng} alt="team member" quality={100} />
                         </figure>
                         <h3>Vivian Njeri</h3>
                         <h4>Head of Sales, <br /> Kenya</h4>
@@ -256,7 +254,7 @@ const Home = () => {
                             <Image src={RachelPng} alt="team member" />
                         </figure>
                         <h3>Thelma Areh</h3>
-                        <h4>Head of Brand Partnerships, Nigeria</h4>
+                        <h4>Head of Brand Partnerships, <br /> Nigeria</h4>
                         <p>
                             thelma@mdundo.com
                         </p>
