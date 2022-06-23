@@ -4,10 +4,23 @@ import Navigation from "../components/navBar/Navigation";
 import Tabs from '../components/FeatureTabs/Tabs';
 import styles from '../styles/Home.module.scss'
 //Assets
-import BrandLift from '../public/assets/images/ProductShots2.png'
 import Sportpesa from '../public/assets/images/SportPesa.svg'
 import Cocacola from '../public/assets/images/CocaCola.svg'
 import EABL from '../public/assets/images/EABL.svg'
+import Chrome from '../public/assets/images/brandlogos/ChromeGin.svg'
+import Dentsu from '../public/assets/images/brandlogos/dentsuaegis.svg'
+import Guiness from '../public/assets/images/brandlogos/Guiness.svg'
+import MTN from '../public/assets/images/brandlogos/MTN.svg'
+import Nivea from '../public/assets/images/brandlogos/Nivea.svg'
+import OMG from '../public/assets/images/brandlogos/OMG.svg'
+import Ostrich from '../public/assets/images/brandlogos/Ostrich.svg'
+import Phd from '../public/assets/images/brandlogos/Phd.svg'
+import Safaricom from '../public/assets/images/brandlogos/Safaricom.svg'
+import StandChart from '../public/assets/images/brandlogos/StandChart.svg'
+import Tusker from '../public/assets/images/brandlogos/Tusker.svg'
+import Vodacom from '../public/assets/images/brandlogos/vodacom.svg'
+
+import BrandLift from '../public/assets/images/ProductShots2.png'
 import AudioAdMockup from '../public/assets/images/AudioAd2.png'
 import TrustSvg from '../public/assets/images/Trust.svg'
 import AdBlockerSvg from '../public/assets/images/AdBlocker.svg'
@@ -177,31 +190,55 @@ const Home = () => {
                 <div className={styles.clientsContainer}>
                     <div className={styles.clientsLogos}>
                         <h2>Who we work with</h2>
+                        <h2>Our Strong Global Partners</h2>
                         <p>
                             We have been trusted by the biggest brands and agencies <br /> across Africa…
                         </p>
 
+                        <div className={styles.clientsLogosMobileGrid}>
+                            <div>
+                                <Image src={Sportpesa} alt="sportpesa" width={106} height={64} />
+                                <Image src={EABL} alt="eabl" width={106} height={64} />
+                                <Image src={Vodacom} alt="vodacom" width={136} height={64} />
+                            </div>
+                            <div>
+                                <Image src={Cocacola} alt="cocacola" width={106} height={64} />
+                                <Image src={OMG} alt="omg" width={106} height={64} />
+                                <Image src={Guiness} alt="guiness" width={106} height={64} />
+                            </div>
+                            <div>
+                                <Image src={Dentsu} alt="dentsu" width={136} height={64} />
+                                <Image src={MTN} alt="mtn" width={106} height={64} />
+                                <Image src={Chrome} alt="chrome" width={106} height={64} />
+                            </div>
+                            <div>
+                                <Image src={Tusker} alt="dentsu" width={136} height={64} />
+                                <Image src={Phd} alt="mtn" width={106} height={64} />
+                                <Image src={Ostrich} alt="chrome" width={106} height={64} />
+                            </div>
+                        </div>
+
                         <div className={styles.clientsLogosGrid}>
                             <div>
+                                <Image src={Sportpesa} alt="sportpesa" width={106} height={64} />
                                 <Image src={EABL} alt="eabl" width={106} height={64} />
-                                <Image src={Cocacola} alt="eabl" width={106} height={64} />
-                                <Image src={Sportpesa} alt="eabl" width={136} height={64} />
-                                <Image src={Cocacola} alt="eabl" width={106} height={64} />
-                                <Image src={EABL} alt="eabl" width={106} height={64} />
+                                <Image src={Vodacom} alt="vodacom" width={136} height={64} />
+                                <Image src={Safaricom} alt="safaricom" width={106} height={64} />
+                                <Image src={Cocacola} alt="cocacola" width={106} height={64} />
                             </div>
                             <div>
-                                <Image src={EABL} alt="eabl" width={106} height={64} />
-                                <Image src={Cocacola} alt="eabl" width={106} height={64} />
-                                <Image src={Sportpesa} alt="eabl" width={136} height={64} />
-                                <Image src={Cocacola} alt="eabl" width={106} height={64} />
-                                <Image src={EABL} alt="eabl" width={106} height={64} />
+                                <Image src={OMG} alt="omg" width={106} height={64} />
+                                <Image src={Guiness} alt="guiness" width={106} height={64} />
+                                <Image src={Dentsu} alt="dentsu" width={136} height={64} />
+                                <Image src={MTN} alt="mtn" width={106} height={64} />
+                                <Image src={Chrome} alt="chrome" width={106} height={64} />
                             </div>
                             <div>
-                                <Image src={EABL} alt="eabl" width={106} height={64} />
-                                <Image src={Cocacola} alt="eabl" width={106} height={64} />
-                                <Image src={Sportpesa} alt="eabl" width={136} height={64} />
-                                <Image src={Cocacola} alt="eabl" width={106} height={64} />
-                                <Image src={EABL} alt="eabl" width={106} height={64} />
+                                <Image src={StandChart} alt="standchart" width={106} height={64} />
+                                <Image src={Nivea} alt="nivea" width={106} height={64} />
+                                <Image src={Tusker} alt="tusker" width={136} height={64} />
+                                <Image src={Phd} alt="phd" width={106} height={64} />
+                                <Image src={Ostrich} alt="ostrich" width={106} height={64} />
                             </div>
                         </div>
                     </div>
