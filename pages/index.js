@@ -56,7 +56,7 @@ const Home = () => {
                         </p>
                         <div className={styles.homeTextCta}>
                             <a href="#try">Try Now <span>(Free)</span></a>
-                            <a href="#vid">Watch Introductory Video</a>
+                            <a href="#vid">Watch Introductory Video &gt;</a>
                         </div>
                         <div className={styles.homeTextUsers}>
                             <p>Trusted by over 100 businesses</p>
@@ -92,7 +92,7 @@ const Home = () => {
                             See how we’ve helped our clients increase their Brandlift score with our <br /> unique advertising and insights.
                         </p>
                         <a href="#casestudies">
-                            View Case Studies
+                            View Case Studies &gt;
                         </a>
                     </div>
                     <h2>Case Studies</h2>

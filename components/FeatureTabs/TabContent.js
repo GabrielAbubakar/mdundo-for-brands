@@ -12,7 +12,7 @@ const TabContent = ({ id, activeTab, title, subtitle, content, src1, src2 }) => 
                 <p>{content}</p>
                 <div className={styles.buttonGroup}>
                     <a href="#er">Listen to Ad</a>
-                    <a href="#er">See Campaign Results</a>
+                    <a href="#er">See Campaign Results &gt;</a>
                 </div>
             </div>
             <div className={styles.tabImgContainer}>
