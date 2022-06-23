@@ -65,7 +65,7 @@
     @include respond(tab-port) {
         margin-bottom: 2rem;
         font-size: 2rem;
-
+        line-height: 38px;
     }
 
     @include respond(phone) {
@@ -265,6 +265,10 @@
         margin-top: 2rem;
 
         @include respond(tab-port) {
+            font-size: 2rem;
+        }
+
+        @include respond(phone) {
             margin-top: 0;
             font-size: 1.5625rem;
             line-height: 26px;
@@ -286,6 +290,11 @@
 
 
         @include respond(tab-port) {
+            font-size: 1rem;
+            line-height: 21px;
+        }
+
+        @include respond(phone) {
             font-size: 0.875rem;
             line-height: 21px;
         }
@@ -351,6 +360,7 @@
     @include respond(phone) {
         flex-direction: column;
         padding-inline: 1.5rem;
+        margin-bottom: 3.5rem;
     }
 
     &>* {
@@ -389,6 +399,8 @@
     max-width: 80%;
 
     @include respond(tab-port) {
+        font-size: 2rem;
+        line-height: 38px;
         max-width: 100%;
     }
 
@@ -406,7 +418,6 @@
 
 .featuresContent p {
     color: #696871;
-    font-size: 400;
     margin-bottom: 1rem;
     max-width: 85%;
     text-transform: capitalize;
@@ -505,7 +516,7 @@
         @include respond(phone) {
             font-size: 1rem;
             line-height: 20px;
-            margin: 1.5rem 0 .5rem 0;
+            margin: 1.2rem 0 .5rem 0;
         }
     }
 
@@ -589,11 +600,12 @@
 
     @include respond(tab-port) {
         font-size: 2rem;
-        line-height: 29px;
+        line-height: 38px;
         letter-spacing: 0px;
     }
 
     @include respond(phone) {
+        line-height: 29px;
         font-size: 1.5625rem;
     }
 }
@@ -644,8 +656,9 @@
     }
 
     @include respond(phone) {
-        padding: 1rem 3rem;
+        padding: 1rem 2.2rem;
         font-size: 0.75rem;
+        margin-right: 0;
     }
 }
 
@@ -687,6 +700,7 @@
     &>* {
         // flex: 1;
         // width: 100%;
+
     }
 
     @include respond(phone) {
@@ -751,6 +765,12 @@
         margin-bottom: 2rem;
         font-weight: 700;
 
+        @include respond(tab-port) {
+            font-size: 2rem;
+            line-height: 33px;
+            letter-spacing: 0px;
+        }
+
         @include respond(phone) {
             font-size: 1.5625rem;
             line-height: 33px;
@@ -777,6 +797,10 @@
         margin-bottom: 3rem;
         font-family: 'Azo Sans Md', 'Open Sans', sans-serif;
         font-size: 1.125rem;
+
+        @include respond(tab-port) {
+            font-size: 1rem;
+        }
 
         @include respond(phone) {
             font-size: .875rem;
