@@ -114,7 +114,7 @@ const Home = () => {
                         </div>
 
                         <div className={styles.featuresImgBox}>
-                            <Image src={AudioAdMockup} alt="audio ad phone" width={716} height={670} placeholder="blur" quality={100} />
+                            <Image src={AudioAdMockup} alt="audio ad phone" width={716} height={670} quality={100} />
                         </div>
                     </div>
 
@@ -280,7 +280,7 @@ const Home = () => {
                 <div className={styles.teamContainer}>
                     <div className={styles.teamMemberCard}>
                         <figure>
-                            <Image src={RachelPng} alt="team member" />
+                            <Image src={RachelPng} alt="team member" quality={100} />
                         </figure>
                         <h3>Rachel Karanu</h3>
                         <h4>Head of Brand Partnerships, <br /> Africa</h4>
@@ -300,7 +300,7 @@ const Home = () => {
                     </div>
                     <div className={styles.teamMemberCard}>
                         <figure>
-                            <Image src={RachelPng} alt="team member" />
+                            <Image src={RachelPng} alt="team member" quality={100} />
                         </figure>
                         <h3>Thelma Areh</h3>
                         <h4>Head of Brand Partnerships, <br /> Nigeria</h4>
@@ -314,26 +314,32 @@ const Home = () => {
             {/* Events Section */}
             <section className={styles.events} id="events">
                 <div className={styles.eventsContainer}>
-                    <h2>Events</h2>
-                    <div className={styles.eventsVideoCarousel}>
-                        <div className={styles.eventsVideoCard}>
-                            <iframe width='100%' height='100%' src="https://www.youtube.com/embed/gaaTve1xLvQ" title="YouTube video player" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowFullScreen></iframe>
-                        </div>
-                        <div className={styles.eventsVideoCard}>
-                            <iframe width='100%' height="100%" src="https://www.youtube.com/embed/ArB3gEPc1I4" title="YouTube video player" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowFullScreen></iframe>
-                        </div>
-                        <div className={styles.eventsVideoCard}>
-                            <iframe width='100%' height='100%' src="https://www.youtube.com/embed/gaaTve1xLvQ" title="YouTube video player" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowFullScreen></iframe>
-                        </div>
-                        <div className={styles.eventsVideoCard}>
-                            <iframe width='100%' height="100%" src="https://www.youtube.com/embed/ArB3gEPc1I4" title="YouTube video player" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowFullScreen></iframe>
+                    <div className={styles.eventsContainerTop}>
+                        <h2>Events</h2>
+                        <div className={styles.eventsVideoCarousel}>
+                            <div className={styles.eventsVideoCard}>
+                                <iframe width='100%' height='100%' src="https://www.youtube.com/embed/gaaTve1xLvQ" title="YouTube video player" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowFullScreen></iframe>
+                            </div>
+                            <div className={styles.eventsVideoCard}>
+                                <iframe width='100%' height="100%" src="https://www.youtube.com/embed/ArB3gEPc1I4" title="YouTube video player" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowFullScreen></iframe>
+                            </div>
+                            <div className={styles.eventsVideoCard}>
+                                <iframe width='100%' height='100%' src="https://www.youtube.com/embed/gaaTve1xLvQ" title="YouTube video player" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowFullScreen></iframe>
+                            </div>
+                            <div className={styles.eventsVideoCard}>
+                                <iframe width='100%' height="100%" src="https://www.youtube.com/embed/ArB3gEPc1I4" title="YouTube video player" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowFullScreen></iframe>
+                            </div>
                         </div>
                     </div>
                     <div className={styles.eventsText}>
-                        <h3 >
-                            groW YOUR BRAND in africa&apos;s <br />
-                            biggest marketS TODAY, <a href="#">GET IN tOUCH</a>
-                        </h3>
+                        <div className={styles.eventsTextBg}>
+                            <p>Try Now</p>
+                            <h3 >
+                                groW YOUR BRAND in africa&apos;s <br />
+                                biggest marketS TODAY.
+                            </h3>
+                            <a href="#">GET IN tOUCH</a>
+                        </div>
                     </div>
                 </div>
             </section>
