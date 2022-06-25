@@ -1053,7 +1053,7 @@
     }
 
     @include respond(phone) {
-        padding: 0 2.5rem;
+        padding: 0 2rem;
         gap: 1rem;
         // justify-content: start;
     }
@@ -1229,7 +1229,7 @@
         grid-auto-columns: 318px;
     }
 }
-
+    
 .eventsVideoCard {
     height: 279px;
     background-color: #696871;
@@ -1239,7 +1239,7 @@
     }
 
     @include respond(phone) {
-        height: 157px;
+        height: 177px;
     }
 }
 
@@ -1346,8 +1346,16 @@
 .footerContainer {
     padding: 7rem 7rem;
 
-    p {
-        text-align: right;
+    @include respond(tab-land) {
+        padding: 7rem 5.5rem;
+    }
+
+    @include respond(tab-port) {
+        padding: 6rem 4rem;
+    }
+
+    @include respond(phone) {
+        padding: 4rem 1.5rem;
     }
 }
 
@@ -1359,6 +1367,7 @@
 
     @include respond(tab-port) {
         flex-direction: column;
+        gap: 2rem;
     }
 }
 
@@ -1369,14 +1378,22 @@
     margin-left: 11rem;
 
 
+    @include respond(tab-land) {
+        margin: 0;
+        gap: 4.5rem;
+    }
+
     @include respond(tab-port) {
         flex-direction: column;
-        margin-left: 0;
+        margin: 0;
+        gap: 2rem;
     }
 
     h4 {
         margin-bottom: 1rem;
         text-transform: uppercase;
+        font-family: 'Azo Sans Bd', 'Open Sans', sans-serif;
+        font-weight: 700;
     }
 
     li {
@@ -1388,6 +1405,9 @@
         a {
             color: #ffffff;
             text-decoration: none;
+            font-family: 'Azo Sans', 'Open Sans', sans-serif;
+            font-weight: 400;
+
 
             &:hover {
                 color: #FF8C00;
@@ -1405,4 +1425,13 @@
 
 .footerCopyright {
     font-family: 'DM Sans', sans-serif;
+    text-align: right;
+
+    @include respond(tab-port) {
+        text-align: left;
+    }
+
+    @include respond(phone) {
+        font-size: 0.9375rem;
+    }
 }
