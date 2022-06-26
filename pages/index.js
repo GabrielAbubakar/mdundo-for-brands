@@ -22,6 +22,7 @@ import Vodacom from '../public/assets/images/brandlogos/vodacom.svg'
 
 import BrandLift from '../public/assets/images/ProductShots2.png'
 import AudioAdMockup from '../public/assets/images/AudioAd2.png'
+import AudioAdMockup2 from '../public/assets/images/AudioAdMockup2.png'
 import TrustSvg from '../public/assets/images/Trust.svg'
 import AdBlockerSvg from '../public/assets/images/AdBlocker.svg'
 import GrowthSvg from '../public/assets/images/Growth.svg'
@@ -115,6 +116,9 @@ const Home = () => {
 
                         <div className={styles.featuresImgBox}>
                             <Image src={AudioAdMockup} alt="audio ad phone" width={716} height={670} quality={100} />
+                        </div>
+                        <div className={styles.featuresImgBoxMobile}>
+                            <Image src={AudioAdMockup2} alt="audio ad phone" quality={100} />
                         </div>
                     </div>
 

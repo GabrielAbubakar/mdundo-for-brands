@@ -376,6 +376,22 @@
     }
 }
 
+.featuresImgBox {
+    display: block;
+
+    @include respond(phone) {
+        display: none;
+    }
+}
+
+.featuresImgBoxMobile {
+    display: none;
+
+    @include respond(phone) {
+        display: block;
+    }
+}
+
 .featuresContent {
     align-self: center;
 
@@ -428,7 +444,7 @@
     color: #696871;
     margin-bottom: 1rem;
     max-width: 85%;
-    text-transform: capitalize;
+    // text-transform: capitalize;
     line-height: 30px;
     font-size: 1.25rem;
 
@@ -1229,7 +1245,7 @@
         grid-auto-columns: 318px;
     }
 }
-    
+
 .eventsVideoCard {
     height: 279px;
     background-color: #696871;
