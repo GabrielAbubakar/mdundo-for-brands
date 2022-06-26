@@ -23,13 +23,15 @@
 
     @include respond(phone) {
         padding: 1rem 1.5rem;
-        gap: 6rem;
+        gap: 4rem;
     }
 }
 
 
 
 .navigation__logo {
+    display: flex;
+    align-items: center;
     // height: 38px;
 }
 
@@ -115,7 +117,7 @@
 .hamburger {
     display: none;
 
-    @include respond(tab-port) {
+    @include respond(tab-land) {
         display: flex;
         flex-direction: column;
         justify-content: space-around;
@@ -126,6 +128,11 @@
         cursor: pointer;
         padding: 0;
         z-index: 10;
+    }
+
+    @include respond(phone) {
+        width: 1rem;
+        height: 1rem;
     }
 
 
@@ -142,6 +149,9 @@
         position: relative;
         transform-origin: 1px;
 
+        @include respond(phone) {
+            width: 1rem;
+        }
     }
 
 }

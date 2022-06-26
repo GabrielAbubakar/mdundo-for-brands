@@ -471,12 +471,16 @@
     border-radius: .6rem;
     font-weight: 700;
     text-decoration: none;
-    padding: 1rem 3rem;
+    padding: 1rem 6rem;
     transition: all .2s ease;
     border: none;
     text-align: center;
 
     @include respond(tab-port) {
+        display: inline;
+    }
+
+    @include respond(phone) {
         display: block;
     }
 }
