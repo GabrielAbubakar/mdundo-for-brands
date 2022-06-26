@@ -14,13 +14,24 @@
 
 
     @include respond(tab-land) {
+        padding: 1rem 5.5rem;
+    }
+
+    @include respond(tab-port) {
         padding: 1rem 4rem;
+    }
+
+    @include respond(phone) {
+        padding: 1rem 1.5rem;
+        gap: 6rem;
     }
 }
 
 
 
-.navigation__logo {}
+.navigation__logo {
+    // height: 38px;
+}
 
 
 .navigation__links {
@@ -99,4 +110,56 @@
 
 .navigation__button:hover {
     transform: translateY(-1px);
+}
+
+.hamburger {
+    display: none;
+
+    @include respond(tab-port) {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        width: 1.5rem;
+        height: 1.5rem;
+        background: transparent;
+        border: none;
+        cursor: pointer;
+        padding: 0;
+        z-index: 10;
+    }
+
+
+    &:focus {
+        outline: none;
+    }
+
+    div {
+        width: 1.5rem;
+        height: 0.1rem;
+        background: black;
+        border-radius: 10px;
+        transition: all 0.3s linear;
+        position: relative;
+        transform-origin: 1px;
+
+    }
+
+}
+
+.open {
+
+    div {
+        &:first-child {
+            transform: rotate(45deg);
+        }
+
+        &:nth-child(2) {
+            opacity: 0;
+            transform: translateX(20px);
+        }
+
+        &:nth-child(3) {
+            transform: rotate(-45deg);
+        }
+    }
 }

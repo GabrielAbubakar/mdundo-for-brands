@@ -8,6 +8,7 @@ import MudondoLogo from '../../public/assets/images/MdundoBrandsLogo.svg'
 const Navigation = () => {
 
     const [navOpen, setNavOpen] = useState(false)
+    const [burgerOpen, setBurgerOpen] = useState(false)
 
 
 
@@ -17,7 +18,7 @@ const Navigation = () => {
             <nav className={styles.navigation}>
 
                 <Link href='/'>
-                    <a>
+                    <a className={styles.navigation__logo}>
                         <Image src={MudondoLogo} alt="mdundobrands" title='mdundobrands logo' />
                     </a>
                 </Link>
@@ -37,6 +38,13 @@ const Navigation = () => {
                     </li>
                     <a href='#none' className={styles.navigation__button}>Sign Up</a>
                 </ul>
+                <button className={burgerOpen ? `${styles.hamburger} ${styles.open}` : styles.hamburger}
+                    onClick={() => setBurgerOpen(!burgerOpen)}
+                >
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                </button>
 
             </nav>
             {/* </div> */}
