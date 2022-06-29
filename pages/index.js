@@ -26,7 +26,7 @@ import AudioAdMockup2 from '../public/assets/images/AudioAdMockup2.png'
 import TrustSvg from '../public/assets/images/Trust.svg'
 import AdBlockerSvg from '../public/assets/images/AdBlocker.svg'
 import GrowthSvg from '../public/assets/images/Growth.svg'
-import MapPng from '../public/assets/images/map.png'
+import MapPng from '../public/assets/images/Group69.svg'
 import RachelPng from '../public/assets/images/RachelMdundo.png'
 import MdundoLogoSvg from '../public/assets/images/mdundoLogoDark.svg'
 import NigerianFlag from '../public/assets/images/NigerianFlag.svg'
@@ -287,7 +287,7 @@ const Home = () => {
                             <Image src={RachelPng} alt="team member" quality={100} />
                         </figure>
                         <h3>Rachel Karanu</h3>
-                        <h4>Head of Brand Partnerships, <br /> Africa</h4>
+                        <h4>Head of Brand Partnerships, Africa</h4>
                         <p>
                             rachel@mdundo.com
                         </p>
@@ -297,7 +297,7 @@ const Home = () => {
                             <Image src={RachelPng} alt="team member" quality={100} />
                         </figure>
                         <h3>Vivian Njeri</h3>
-                        <h4>Head of Sales, <br /> Kenya</h4>
+                        <h4>Head of Sales, Kenya</h4>
                         <p>
                             vivian@mdundo.com
                         </p>
@@ -307,7 +307,7 @@ const Home = () => {
                             <Image src={RachelPng} alt="team member" quality={100} />
                         </figure>
                         <h3>Thelma Areh</h3>
-                        <h4>Head of Brand Partnerships, <br /> Nigeria</h4>
+                        <h4>Head of Brand Partnerships, Nigeria</h4>
                         <p>
                             thelma@mdundo.com
                         </p>

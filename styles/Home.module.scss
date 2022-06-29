@@ -699,6 +699,7 @@
     color: #FFFFFF;
     // border: 2px solid #FFFFFF;
     padding: 1rem 2rem;
+    text-decoration: none;
 
     @include respond(tab-port) {
         font-size: 0.764375rem;
@@ -743,6 +744,7 @@
 }
 
 .statisticsImgBox {
+    position: relative;
 
 
     @include respond(tab-port) {
@@ -753,6 +755,11 @@
         display: none;
     }
 }
+
+
+
+
+
 
 
 
@@ -1183,7 +1190,7 @@
 
 .eventsContainerTop {
     padding: 5rem 0 3rem 7rem;
-    background-color: #F9F9F9;
+    background-color: #FFF9F2;
 
 
     @include respond(tab-land) {
@@ -1393,7 +1400,7 @@
 
 .footerNavigation {
     display: flex;
-    gap: 7rem;
+    gap: 10rem;
     margin-right: auto;
     margin-left: 11rem;
 
