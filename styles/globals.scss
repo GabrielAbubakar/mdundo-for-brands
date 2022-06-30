@@ -20,6 +20,7 @@
         url('../public/assets/font/AzoSans-Regular.ttf') format('truetype');
     font-weight: normal;
     font-style: normal;
+    font-display: swap;
 }
 
 @font-face {
@@ -32,6 +33,7 @@
         url('../public/assets/font/AzoSans-Light.ttf') format('truetype');
     font-weight: 300;
     font-style: normal;
+    font-display: swap;
 }
 
 @font-face {
@@ -44,6 +46,7 @@
         url('../public/assets/font/AzoSans-Black.ttf') format('truetype');
     font-weight: 900;
     font-style: normal;
+    font-display: swap;
 }
 
 @font-face {
@@ -56,6 +59,7 @@
         url('../public/assets/font/AzoSans-Medium.ttf') format('truetype');
     font-weight: 500;
     font-style: normal;
+    font-display: swap;
 }
 
 
@@ -101,5 +105,7 @@ body {
 }
 
 p {
+
+    font-display: swap;
     line-height: 30px;
 }
