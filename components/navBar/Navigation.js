@@ -10,6 +10,9 @@ const Navigation = () => {
     const [navOpen, setNavOpen] = useState(false)
     const [burgerOpen, setBurgerOpen] = useState(false)
 
+    const closeBurger = () => {
+        setBurgerOpen(!burgerOpen)
+    }
 
 
     return (
@@ -28,6 +31,9 @@ const Navigation = () => {
                         <a href="#home" >
                             Resources
                         </a>
+                        <svg width={11} height={6} fill="none">
+                            <path d="M11 0H0l6 6 5-6z" fill="#000" />
+                        </svg>
                         <ul className={styles.hoverNavigation}
                             style={{ display: navOpen ? 'block' : 'none' }}
                         >
@@ -47,6 +53,18 @@ const Navigation = () => {
                 </button>
 
             </nav>
+
+            <div className={styles.hamburgerMenuContainer} style={{ display: burgerOpen ? 'block' : 'none' }}>
+                <div className={styles.hamburgerMenu} >
+                    <ul>
+                        <li onClick={closeBurger}><a href="#case-studies">Case Studies</a></li>
+                        <li onClick={closeBurger}><a href="#contact-us">Contact Us</a></li>
+                        <li onClick={closeBurger}><a href="#faqs">FAQS</a></li>
+                    </ul>
+
+                    <a href="#try" onClick={closeBurger}>Try Now</a>
+                </div>
+            </div>
             {/* </div> */}
         </div>
     )
