@@ -335,7 +335,7 @@ const Home = () => {
                             </div>
                         </div>
                     </div>
-                    <div className={styles.eventsText}>
+                    <div className={styles.eventsText} id='contact-us'>
                         <div className={styles.eventsTextBg}>
                             <p>Try Now</p>
                             <h3 >
@@ -418,7 +418,7 @@ const Home = () => {
                             </a>
                         </div>
                     </div>
-                    <p className={styles.footerCopyright}>Copyright © 2021 Mdundo. All rights reserved.</p>
+                    <p className={styles.footerCopyright}>Copyright © 2022 Mdundo. All rights reserved.</p>
                 </div>
             </footer>
         </>
