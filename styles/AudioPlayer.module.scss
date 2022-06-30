@@ -2,6 +2,11 @@
     display: flex;
     gap: 1rem;
     margin-bottom: 1.7rem;
+
+
+    button {
+        cursor: pointer;
+    }
 }
 
 .audioBox input[type=range] {
