@@ -2,7 +2,7 @@ import React from 'react'
 
 const NigerianFlag = () => {
     return (
-        <svg width={42} height={24} fill="none">
+        <svg width={42} height={24} fill="none" viewBox="0 0 42 24">
             <g clipPath="url(#prefix__clip0_241_162)">
                 <path d="M-2.019.059H43.97v23.536H-2.02V.059z" fill="#008751" />
                 <path d="M13.31.059h15.33v23.536H13.31V.059z" fill="#fff" />

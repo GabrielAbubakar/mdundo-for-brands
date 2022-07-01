@@ -5,11 +5,12 @@ import Tabs from '../components/FeatureTabs/Tabs';
 import styles from '../styles/Home.module.scss'
 
 import BrandLift from '../public/assets/images/ProductShots2.png'
+import BrandLift2 from '../public/assets/images/ProductShots2.webp'
 import AudioAdMockup from '../public/assets/images/AudioAd2.png'
 import AudioAdMockup2 from '../public/assets/images/AudioAdMockup2.png'
 import MapPng from '../public/assets/images/map.png'
 import RachelPng from '../public/assets/images/RachelMdundo.png'
-import NigerianFlag from '../public/assets/images/NigerianFlag.svg'
+import NigerianFlag from '../components/Icons/NigerianFlag'
 import CountryCard from '../components/CountryCard';
 
 //Icon Components
@@ -74,10 +75,10 @@ const Home = () => {
                     </div>
 
                     <div className={styles.homeImgContainer}>
-                        <Image src={BrandLift} alt="bradlift desktop"
+                        <Image src={BrandLift2} alt="bradlift desktop"
                             width={982}
                             height={645}
-                            quality={100}
+                            quality={80}
                             priority />
                     </div>
 
@@ -174,12 +175,11 @@ const Home = () => {
                         </p>
 
                         <div className={styles.statisticsCountriesCarousel}>
-                            <CountryCard flag={NigerianFlag} name="Nigeria" stat="8.7" />
-                            <CountryCard flag={NigerianFlag} name="Nigeria" stat="8.7" />
-                            <CountryCard flag={NigerianFlag} name="Nigeria" stat="8.7" />
-                            <CountryCard flag={NigerianFlag} name="Nigeria" stat="8.7" />
-                            <CountryCard flag={NigerianFlag} name="Nigeria" stat="8.7" />
-                            <CountryCard flag={NigerianFlag} name="Nigeria" stat="8.7" />
+                            <CountryCard flag={<NigerianFlag />} name="Nigeria" stat="8.7" />
+                            <CountryCard flag={<NigerianFlag />} name="Nigeria" stat="8.7" />
+                            <CountryCard flag={<NigerianFlag />} name="Nigeria" stat="8.7" />
+                            <CountryCard flag={<NigerianFlag />} name="Nigeria" stat="8.7" />
+                            <CountryCard flag={<NigerianFlag />} name="Nigeria" stat="8.7" />
                         </div>
 
                         <div className={styles.statisticsButtons}>

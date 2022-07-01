@@ -6,7 +6,8 @@ const CountryCard = ({ name, flag, stat }) => {
     return (
         <div className={styles.statisticsCountriesBox}>
             <div>
-                <Image src={flag} alt='nigerian Flag' />
+                {/* <Image src={flag} alt='nigerian Flag' /> */}
+                {flag}
                 <h4>{name}</h4>
             </div>
             <h3>{stat}M</h3>
