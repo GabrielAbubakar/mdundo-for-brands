@@ -24,7 +24,7 @@
 
     @include respond(phone) {
         padding: 1rem 1.5rem;
-        gap: 8rem;
+        gap: 4rem;
     }
 }
 
@@ -200,7 +200,7 @@
     background-repeat: no-repeat;
     width: 100%;
     height: 100%;
-    padding: 0 1.8rem;
+
     display: flex;
     flex-direction: column;
 
@@ -213,6 +213,7 @@
         gap: 1.5rem;
         margin-top: 11rem;
         margin-bottom: 7rem;
+        padding: 0 1.8rem;
 
         li {
             list-style-type: none;
@@ -228,6 +229,7 @@
             letter-spacing: 0px;
             text-align: center;
             color: #333333;
+
         }
     }
 
@@ -247,6 +249,7 @@
         border-radius: .5rem;
         align-self: center;
         padding: 1rem 5.5rem;
+        margin: 0 1.8rem;
 
         @include respond(tab-port) {
             align-self: stretch;

@@ -3,34 +3,39 @@ import Head from 'next/head'
 import Navigation from "../components/navBar/Navigation";
 import Tabs from '../components/FeatureTabs/Tabs';
 import styles from '../styles/Home.module.scss'
-//Assets
-import Sportpesa from '../public/assets/images/SportPesa.svg'
-import Cocacola from '../public/assets/images/CocaCola.svg'
-import EABL from '../public/assets/images/EABL.svg'
-import Chrome from '../public/assets/images/brandlogos/ChromeGin.svg'
-import Dentsu from '../public/assets/images/brandlogos/dentsuaegis.svg'
-import Guiness from '../public/assets/images/brandlogos/Guiness.svg'
-import MTN from '../public/assets/images/brandlogos/MTN.svg'
-import Nivea from '../public/assets/images/brandlogos/Nivea.svg'
-import OMG from '../public/assets/images/brandlogos/OMG.svg'
-import Ostrich from '../public/assets/images/brandlogos/Ostrich.svg'
-import Phd from '../public/assets/images/brandlogos/Phd.svg'
-import Safaricom from '../public/assets/images/brandlogos/Safaricom.svg'
-import StandChart from '../public/assets/images/brandlogos/StandChart.svg'
-import Tusker from '../public/assets/images/brandlogos/Tusker.svg'
-import Vodacom from '../public/assets/images/brandlogos/vodacom.svg'
 
 import BrandLift from '../public/assets/images/ProductShots2.png'
 import AudioAdMockup from '../public/assets/images/AudioAd2.png'
 import AudioAdMockup2 from '../public/assets/images/AudioAdMockup2.png'
-import TrustSvg from '../public/assets/images/Trust.svg'
-import AdBlockerSvg from '../public/assets/images/AdBlocker.svg'
-import GrowthSvg from '../public/assets/images/Growth.svg'
-import MapPng from '../public/assets/images/Group69.svg'
+import MapPng from '../public/assets/images/Map.png'
 import RachelPng from '../public/assets/images/RachelMdundo.png'
-import MdundoLogoSvg from '../public/assets/images/mdundoLogoDark.svg'
 import NigerianFlag from '../public/assets/images/NigerianFlag.svg'
 import CountryCard from '../components/CountryCard';
+
+//Icon Components
+import Trust from '../components/Icons/Trust'
+import AdBlocker from '../components/Icons/AdBlocker'
+import Growth from '../components/Icons/Growth'
+import MdundoDark from '../components/Icons/MdundoDark'
+
+// Client Icon Components
+import Chrome from '../components/Icons/Chrome'
+import Cocacola from '../components/Icons/Cocacola'
+import Dentsu from '../components/Icons/Dentsu'
+import EABL from '../components/Icons/EABL'
+import Guiness from '../components/Icons/Guiness'
+import MTN from '../components/Icons/MTN'
+import Nivea from '../components/Icons/Nivea'
+import OMG from '../components/Icons/OMG'
+import Ostrich from '../components/Icons/Ostrich'
+import Phd from '../components/Icons/Phd'
+import Safaricom from '../components/Icons/Safaricom'
+import SportPesa from '../components/Icons/SportPesa'
+import StandChart from '../components/Icons/StandChart'
+import Tusker from '../components/Icons/Tusker'
+import Vodacom from '../components/Icons/Vodacom'
+
+
 
 
 
@@ -61,9 +66,9 @@ const Home = () => {
                         <div className={styles.homeTextUsers}>
                             <p>Trusted by over 100 businesses</p>
                             <div className={styles.userLogos}>
-                                <Image src={Sportpesa} alt="Sportpesa" />
-                                <Image src={EABL} alt="EABL" />
-                                <Image src={Cocacola} alt="Cocacola" />
+                                <SportPesa />
+                                <EABL />
+                                <Cocacola />
                             </div>
                         </div>
                     </div>
@@ -129,7 +134,7 @@ const Home = () => {
                         <div className={styles.featuresBottomContainer}>
                             <div className={styles.featuresBottomContentBox}>
                                 <div className={styles.featuresBottomImg}>
-                                    <Image src={TrustSvg} alt="Trust Us" title='Trust Us' />
+                                    <Trust />
                                 </div>
                                 <h3>Builds Trust</h3>
                                 <p>
@@ -138,7 +143,7 @@ const Home = () => {
                             </div>
                             <div className={styles.featuresBottomContentBox}>
                                 <div className={styles.featuresBottomImg}>
-                                    <Image src={AdBlockerSvg} alt="AdBlocker" title='We always play our ads' />
+                                    <AdBlocker />
                                 </div>
                                 <h3>Reaches a wider audience</h3>
                                 <p>
@@ -147,7 +152,7 @@ const Home = () => {
                             </div>
                             <div className={styles.featuresBottomContentBox}>
                                 <div className={styles.featuresBottomImg}>
-                                    <Image src={GrowthSvg} alt="Growth" title='We guarantee Growth' />
+                                    <Growth />
                                 </div>
                                 <h3>Influence Consumer Decisions</h3>
                                 <p>
@@ -200,48 +205,48 @@ const Home = () => {
 
                         <div className={styles.clientsLogosMobileGrid}>
                             <div>
-                                <Image src={Sportpesa} alt="sportpesa" width={106} height={64} />
-                                <Image src={EABL} alt="eabl" width={106} height={64} />
-                                <Image src={Vodacom} alt="vodacom" width={136} height={64} />
+                                <SportPesa />
+                                <EABL />
+                                <Vodacom />
                             </div>
                             <div>
-                                <Image src={Cocacola} alt="cocacola" width={106} height={64} />
-                                <Image src={OMG} alt="omg" width={106} height={64} />
-                                <Image src={Guiness} alt="guiness" width={106} height={64} />
+                                <Cocacola />
+                                <OMG />
+                                <Guiness />
                             </div>
                             <div>
-                                {/* <Image src={Dentsu} alt="dentsu" width={136} height={64} />
-                                <Image src={MTN} alt="mtn" width={106} height={64} />
-                                <Image src={Chrome} alt="chrome" width={106} height={64} /> */}
+                                <Dentsu />
+                                <MTN />
+                                <Chrome />
                             </div>
                             <div>
-                                <Image src={Tusker} alt="dentsu" width={136} height={64} />
-                                <Image src={Phd} alt="mtn" width={106} height={64} />
-                                <Image src={Ostrich} alt="chrome" width={106} height={64} />
+                                <Tusker />
+                                <Phd />
+                                <Ostrich />
                             </div>
                         </div>
 
                         <div className={styles.clientsLogosGrid}>
                             <div>
-                                <Image src={Sportpesa} alt="sportpesa" width={106} height={64} />
-                                <Image src={EABL} alt="eabl" width={106} height={64} />
-                                <Image src={Vodacom} alt="vodacom" width={136} height={64} />
-                                <Image src={Safaricom} alt="safaricom" width={106} height={64} />
-                                <Image src={Cocacola} alt="cocacola" width={106} height={64} />
+                                <SportPesa />
+                                <EABL />
+                                <Vodacom />
+                                <Safaricom />
+                                <Cocacola />
                             </div>
                             <div>
-                                <Image src={OMG} alt="omg" width={106} height={64} />
-                                <Image src={Guiness} alt="guiness" width={106} height={64} />
-                                <Image src={Dentsu} alt="dentsu" width={136} height={64} />
-                                <Image src={MTN} alt="mtn" width={106} height={64} />
-                                <Image src={Chrome} alt="chrome" width={106} height={64} />
+                                <OMG />
+                                <Guiness />
+                                <Dentsu />
+                                <MTN />
+                                <Chrome />
                             </div>
                             <div>
-                                <Image src={StandChart} alt="standchart" width={106} height={64} />
-                                <Image src={Nivea} alt="nivea" width={106} height={64} />
-                                <Image src={Tusker} alt="tusker" width={136} height={64} />
-                                <Image src={Phd} alt="phd" width={106} height={64} />
-                                <Image src={Ostrich} alt="ostrich" width={106} height={64} />
+                                <StandChart />
+                                <Nivea />
+                                <Tusker />
+                                <Phd />
+                                <Ostrich />
                             </div>
                         </div>
                     </div>
@@ -353,7 +358,7 @@ const Home = () => {
                     <div className={styles.footerContentContainer}>
 
                         <figure>
-                            <Image src={MdundoLogoSvg} alt='mdundo dark' />
+                            <MdundoDark />
                         </figure>
 
                         <div className={styles.footerNavigation}>
