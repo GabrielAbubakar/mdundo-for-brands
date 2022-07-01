@@ -7,7 +7,7 @@ import styles from '../styles/Home.module.scss'
 import BrandLift from '../public/assets/images/ProductShots2.png'
 import AudioAdMockup from '../public/assets/images/AudioAd2.png'
 import AudioAdMockup2 from '../public/assets/images/AudioAdMockup2.png'
-import MapPng from '../public/assets/images/Map.png'
+import MapPng from '../public/assets/images/map.png'
 import RachelPng from '../public/assets/images/RachelMdundo.png'
 import NigerianFlag from '../public/assets/images/NigerianFlag.svg'
 import CountryCard from '../components/CountryCard';
