@@ -34,7 +34,6 @@ import CountryCard from '../components/CountryCard';
 
 
 
-
 const Home = () => {
     return (
         <>
@@ -211,9 +210,9 @@ const Home = () => {
                                 <Image src={Guiness} alt="guiness" width={106} height={64} />
                             </div>
                             <div>
-                                <Image src={Dentsu} alt="dentsu" width={136} height={64} />
+                                {/* <Image src={Dentsu} alt="dentsu" width={136} height={64} />
                                 <Image src={MTN} alt="mtn" width={106} height={64} />
-                                <Image src={Chrome} alt="chrome" width={106} height={64} />
+                                <Image src={Chrome} alt="chrome" width={106} height={64} /> */}
                             </div>
                             <div>
                                 <Image src={Tusker} alt="dentsu" width={136} height={64} />
