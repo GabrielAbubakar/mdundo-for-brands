@@ -5,6 +5,7 @@
     background-color: #FFFFFF;
     border-bottom: 2px solid #E1E1E1;
     z-index: 10;
+    width: 100%;
 }
 
 .navigation {
@@ -24,7 +25,7 @@
 
     @include respond(phone) {
         padding: 1rem 1.5rem;
-        gap: 8rem;
+        gap: 4rem;
     }
 }
 
@@ -35,6 +36,11 @@
     align-items: center;
     z-index: 100;
     // height: 38px;
+
+
+    @include respond(phone) {
+        width: 216px;
+    }
 }
 
 
@@ -46,6 +52,10 @@
     position: relative;
 
     @include respond(tab-land) {
+        gap: 4rem;
+    }
+
+    @include respond(tab-port) {
         display: none;
     }
 
@@ -127,7 +137,7 @@
     display: none;
 
 
-    @include respond(tab-land) {
+    @include respond(tab-port) {
         display: flex;
         flex-direction: column;
         justify-content: space-around;
@@ -200,7 +210,7 @@
     background-repeat: no-repeat;
     width: 100%;
     height: 100%;
-    padding: 0 1.8rem;
+
     display: flex;
     flex-direction: column;
 
@@ -213,6 +223,7 @@
         gap: 1.5rem;
         margin-top: 11rem;
         margin-bottom: 7rem;
+        padding: 0 1.8rem;
 
         li {
             list-style-type: none;
@@ -228,6 +239,7 @@
             letter-spacing: 0px;
             text-align: center;
             color: #333333;
+
         }
     }
 
@@ -247,6 +259,7 @@
         border-radius: .5rem;
         align-self: center;
         padding: 1rem 5.5rem;
+        margin: 0 1.8rem;
 
         @include respond(tab-port) {
             align-self: stretch;
