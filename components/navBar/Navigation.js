@@ -2,7 +2,8 @@ import React, { useState } from 'react'
 import Image from 'next/image'
 import Link from 'next/link'
 import styles from './Navigation.module.scss'
-import MudondoLogo from '../Icons/MdundoLight'
+// import MudondoLogo from '../Icons/MdundoLight'
+import MdundoLogo from '../../public/assets/images/MdundoBrandsLogo.svg'
 
 
 const Navigation = () => {
@@ -23,7 +24,8 @@ const Navigation = () => {
                 {/* Main Logo */}
                 <Link href='/'>
                     <a className={styles.navigation__logo}>
-                        <MudondoLogo />
+                        {/* <MudondoLogo /> */}
+                        <Image src={MdundoLogo} />
                     </a>
                 </Link>
                 <ul className={styles.navigation__links}>
