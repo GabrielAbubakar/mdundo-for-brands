@@ -16,10 +16,11 @@ const Navigation = () => {
 
 
     return (
-        <div className={styles.navigation__container}>
+        // Navigation Container
+        <div className={styles.navigation__container} style={{ position: burgerOpen ? 'fixed' : 'initial' }}>
             {/* <div className="widthContainer"> */}
             <nav className={styles.navigation}>
-
+                {/* Main Logo */}
                 <Link href='/'>
                     <a className={styles.navigation__logo}>
                         <Image src={MudondoLogo} alt="mdundobrands" title='mdundobrands logo' />
@@ -44,6 +45,8 @@ const Navigation = () => {
                     </li>
                     <a href='#none' className={styles.navigation__button}>Sign Up</a>
                 </ul>
+
+                {/* Hamburger Icon */}
                 <button className={burgerOpen ? `${styles.hamburger} ${styles.open}` : styles.hamburger}
                     onClick={() => setBurgerOpen(!burgerOpen)}
                 >
@@ -54,6 +57,7 @@ const Navigation = () => {
 
             </nav>
 
+            {/* Hamburger Menu */}
             <div className={styles.hamburgerMenuContainer} style={{ display: burgerOpen ? 'block' : 'none' }}>
                 <div className={styles.hamburgerMenu} >
                     <ul>
@@ -70,4 +74,4 @@ const Navigation = () => {
     )
 }
 
-export default Navigation
+export default Navigation;
