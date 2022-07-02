@@ -44,6 +44,27 @@ const Home = () => {
     return (
         <>
             <Head>
+                <meta name="description" content="Grow your brand in Africas Biggest Markets Today." />
+                <meta name="keywords" content="mdundo, mdundo brands, mdundo nigeria, mdundo for brands" />
+                <meta name="author" content="Mdundo" />
+                <meta property="og:title" content="Mdundo for Brands" />
+                <meta property="og:type" content="website" />
+                <meta property="og:site_name" content="Mdundo for Brands" />
+                <meta property="og:url" content="www.mdundoforbrands.com" />
+                {/* <meta property="og:image" content="/learn-nigerian-law.png" /> */}
+                <meta property="og:image:type" content="image/png" />
+                <meta property="og:image:width" content="1200" />
+                <meta property="og:image:height" content="1200" />
+                <meta property="og:locale" content="en_US" />
+
+                <meta property="twitter:site" content="Mdundo for Brandsw" />
+                <meta property="twitter:creator" content="mdundohq" />
+                <meta property="twitter:card" content="summary_large_image" />
+                <meta property="twitter:title" content="Mdundo for Brands" />
+                <meta property="twitter:description" content="Grow your brand in Africas Biggest Markets Today." />
+                {/* <meta property="twitter:image:src" content="/learn-nigerian-law.png" /> */}
+                <meta property="twitter:image:width" content="1200" />
+                <meta property="twitter:image:height" content="1200" />
                 <title>Mdundo for Brands</title>
             </Head>
             <Navigation />
