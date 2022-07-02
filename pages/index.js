@@ -4,7 +4,7 @@ import Navigation from "../components/navBar/Navigation";
 import Tabs from '../components/FeatureTabs/Tabs';
 import styles from '../styles/Home.module.scss'
 
-import BrandLift from '../public/assets/images/ProductShots2.png'
+// import BrandLift from '../public/assets/images/ProductShots2.png'
 import BrandLift2 from '../public/assets/images/ProductShots2.webp'
 import AudioAdMockup from '../public/assets/images/AudioAd2.png'
 import AudioAdMockup2 from '../public/assets/images/AudioAdMockup2.png'

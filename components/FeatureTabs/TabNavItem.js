@@ -1,9 +1,8 @@
 import React from "react";
-import Image from "next/image";
 import styles from '../../styles/Tabs.module.scss'
 
 
-const TabNavItem = ({ id, title, activeTab, setActiveTab, src, className }) => {
+const TabNavItem = ({ id, title, activeTab, setActiveTab, src, }) => {
 
     const handleClick = () => {
         if (id !== activeTab) {
@@ -14,7 +13,7 @@ const TabNavItem = ({ id, title, activeTab, setActiveTab, src, className }) => {
 
     return (
         <li onClick={handleClick} className={activeTab === id ? styles.active : ""}>
-            <Image src={src} alt={title} />
+            {src}
         </li>
     );
 };
