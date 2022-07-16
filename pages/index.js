@@ -10,6 +10,8 @@ import AudioAdMockup from '../public/assets/images/AudioAd2.png'
 import AudioAdMockup2 from '../public/assets/images/AudioAdMockup2.png'
 import MapPng from '../public/assets/images/map.png'
 import RachelPng from '../public/assets/images/RachelMdundo.png'
+import VivianPng from '../public/assets/images/Vivian.png'
+import ThelmaPng from '../public/assets/images/Thelma.png'
 import NigerianFlag from '../components/Icons/NigerianFlag'
 import CountryCard from '../components/CountryCard';
 
@@ -309,7 +311,7 @@ const Home = () => {
                 <div className={styles.teamContainer}>
                     <div className={styles.teamMemberCard}>
                         <figure>
-                            <Image src={RachelPng} alt="team member" quality={100} />
+                            <Image src={RachelPng} alt="team member" />
                         </figure>
                         <h3>Rachel Karanu</h3>
                         <h4>Head of Brand Partnerships, Africa</h4>
@@ -319,7 +321,7 @@ const Home = () => {
                     </div>
                     <div className={styles.teamMemberCard}>
                         <figure>
-                            <Image src={RachelPng} alt="team member" quality={100} />
+                            <Image src={VivianPng} alt="team member" />
                         </figure>
                         <h3>Vivian Njeri</h3>
                         <h4>Head of Sales, Kenya</h4>
@@ -329,7 +331,7 @@ const Home = () => {
                     </div>
                     <div className={styles.teamMemberCard}>
                         <figure>
-                            <Image src={RachelPng} alt="team member" quality={100} />
+                            <Image src={ThelmaPng} alt="team member" />
                         </figure>
                         <h3>Thelma Areh</h3>
                         <h4>Head of Brand Partnerships, Nigeria</h4>
