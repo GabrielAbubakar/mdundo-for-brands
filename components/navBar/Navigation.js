@@ -25,7 +25,7 @@ const Navigation = () => {
                 <Link href='/'>
                     <a className={styles.navigation__logo}>
                         {/* <MudondoLogo /> */}
-                        <Image src={MdundoLogo} />
+                        <Image src={MdundoLogo} alt="mdundo for brands" />
                     </a>
                 </Link>
                 <ul className={styles.navigation__links}>
@@ -40,7 +40,7 @@ const Navigation = () => {
                         <ul className={styles.hoverNavigation}
                             style={{ display: navOpen ? 'block' : 'none' }}
                         >
-                            <li><a href="#">Case Studies</a></li>
+                            <li><a href="https://joseph04163.wixsite.com/my-site-1" target={`_blank`} rel="noreferrer">Case Studies</a></li>
                             <li><a href="#">Contact Us</a></li>
                             <li><a href="#">FAQs</a></li>
                         </ul>
