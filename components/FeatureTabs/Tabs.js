@@ -5,10 +5,16 @@ import styles from '../../styles/Tabs.module.scss'
 import VodaColor from "../Icons/VodaColor";
 import ChromeColor from "../Icons/ChromeColor";
 import NiveaColor from "../Icons/NiveaColor"
+// const pokemon = require("../../public/assets/audio/Voda.mp3");
+import VodaAud from "../../public/assets/audio/Voda.mp3"
 
 
 
 const Tabs = () => {
+
+    // const audioTune = new Audio('../../public/assets/audio/Voda.mp3');
+
+
     const [activeTab, setActiveTab] = useState("tab1");
 
     return (
@@ -27,8 +33,10 @@ const Tabs = () => {
                     title='Vodacom TZ'
                     subtitle='Voda Bima Campaign'
                     content="In Q2 of 2021, Vodacom Tanzania launched ‘Voda Bima,’ a service that allows customers to access insurance products through their M-PESA app for the first time. Vodacom briefed Mdundo.com to increase awareness of the service as well as drive subscriptions among its users in Tanzania."
-                    audio='https://www.soundhelix.com/examples/mp3/SoundHelix-Song-1.mp3'
+                    audio=''
                 />
+
+
 
                 <TabContent id="tab2"
                     activeTab={activeTab}
