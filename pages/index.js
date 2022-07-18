@@ -120,7 +120,7 @@ const Home = () => {
                         <p>
                             See how we’ve helped our clients increase their Brandlift score with our <br /> unique advertising and insights.
                         </p>
-                        <a href="#casestudies">
+                        <a href="https://joseph04163.wixsite.com/my-site-1">
                             View Case Studies &gt;
                         </a>
                     </div>
