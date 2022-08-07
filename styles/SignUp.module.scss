@@ -1,0 +1,75 @@
+@import '../styles/_mixins';
+
+.container {
+    background-color: #0F748B;
+    min-height: 100vh;
+    min-width: 100vw;
+    padding: 3rem 0;
+}
+
+.containerItems {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1.5rem;
+}
+
+.logo {}
+
+.signupForm {
+    background-color: #fff;
+    padding: 3rem 2.5rem;
+    border-radius: 8px;
+    width: 35%;
+
+    @include respond(tab-land) {
+        // min-width: ;
+        width: 55%;
+    }
+
+    @include respond(tab-port) {
+        // min-width: ;
+        width: 65%;
+    }
+
+    @include respond(phone) {
+        // min-width: ;
+        width: 90%;
+    }
+
+    label {
+        display: block;
+        margin-bottom: 1.2rem;
+    }
+
+    input {
+        display: block;
+        width: 100%;
+        border: 1px solid #D6D6D6;
+        padding: .6rem;
+        border-radius: .2rem;
+        margin-top: .3rem;
+    }
+
+    input[type="submit"] {
+        background-color: #FF8C00;
+        border: 0;
+        color: #fff;
+        padding: 1rem;
+        margin-top: 2rem;
+        font-family: 'Azo Sans Bd', 'Open Sans', sans-serif;
+        font-size: 1.0625rem;
+        border-radius: .5rem;
+        cursor: pointer;
+    }
+}
+
+.loginText {
+    color: rgba(255, 255, 255, 0.5);
+
+    a {
+        color: #fff;
+        text-decoration: none;
+    }
+}

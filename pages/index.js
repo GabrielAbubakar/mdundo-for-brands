@@ -1,5 +1,6 @@
 import Image from 'next/image'
 import Head from 'next/head'
+import Link from 'next/link'
 import Navigation from "../components/navBar/Navigation";
 import Tabs from '../components/FeatureTabs/Tabs';
 import styles from '../styles/Home.module.scss'
@@ -84,7 +85,9 @@ const Home = () => {
                             Increase brand awareness, expand your audience, and boost foot traffic, among other things. Track the impact of your ad and gain insights on delivery and audience engagement.
                         </p>
                         <div className={styles.homeTextCta}>
-                            <a href="#try">Try Now <span>(Free)</span></a>
+                            <Link href='/signup'>
+                                <a>Try Now <span>(Free)</span></a>
+                            </Link>
                             <a href="#vid">Watch Introductory Video &gt;</a>
                         </div>
                         <div className={styles.homeTextUsers}>
@@ -206,7 +209,7 @@ const Home = () => {
                         </div>
 
                         <div className={styles.statisticsButtons}>
-                            <a href="#touch">Get in Touch</a>
+                            <a href="mailto:brands@mdundo.com">Get in Touch</a>
                             <a href="#numbers">View Q4 numers here &gt;</a>
                         </div>
                     </div>
@@ -369,7 +372,7 @@ const Home = () => {
                                 groW YOUR BRAND in africa&apos;s <br />
                                 biggest marketS TODAY.
                             </h3>
-                            <a href="#">GET IN tOUCH</a>
+                            <a href="mailto:brands@mdundo.com">GET IN tOUCH</a>
                         </div>
                     </div>
                 </div>

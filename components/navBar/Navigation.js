@@ -41,11 +41,13 @@ const Navigation = () => {
                             style={{ display: navOpen ? 'block' : 'none' }}
                         >
                             <li><a href="https://joseph04163.wixsite.com/my-site-1" target={`_blank`} rel="noreferrer">Case Studies</a></li>
-                            <li><a href="#">Contact Us</a></li>
+                            <li><a href="mailto:brands@mdundo.com">Contact Us</a></li>
                             <li><a href="#">FAQs</a></li>
                         </ul>
                     </li>
-                    <a href='#none' className={styles.navigation__button}>Sign Up</a>
+                    <Link href='/signup'>
+                        <a className={styles.navigation__button}>Sign Up</a>
+                    </Link>
                 </ul>
 
                 {/* Hamburger Icon */}
