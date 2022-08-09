@@ -316,7 +316,7 @@ const Home = () => {
                 <div className={styles.teamContainer}>
                     <div className={styles.teamMemberCard}>
                         <figure>
-                            <Image src={RachelPng} alt="team member" />
+                            <Image src={RachelPng} alt="team member" quality={100} />
                         </figure>
                         <h3>Rachel Karanu</h3>
                         <h4>Head of Brand Partnerships, Africa</h4>
@@ -326,7 +326,7 @@ const Home = () => {
                     </div>
                     <div className={styles.teamMemberCard}>
                         <figure>
-                            <Image src={VivianPng} alt="team member" />
+                            <Image src={VivianPng} alt="team member" quality={100} />
                         </figure>
                         <h3>Vivian Njeri</h3>
                         <h4>Head of Sales, Kenya</h4>
@@ -336,7 +336,7 @@ const Home = () => {
                     </div>
                     <div className={styles.teamMemberCard}>
                         <figure>
-                            <Image src={ThelmaPng} alt="team member" />
+                            <Image src={ThelmaPng} alt="team member" quality={100} />
                         </figure>
                         <h3>Thelma Areh</h3>
                         <h4>Head of Brand Partnerships, Nigeria</h4>
