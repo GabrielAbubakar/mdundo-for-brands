@@ -9,12 +9,14 @@ import styles from '../styles/Home.module.scss'
 import BrandLift2 from '../public/assets/images/ProductShots2.webp'
 import AudioAdMockup from '../public/assets/images/AudioAd2.png'
 import AudioAdMockup2 from '../public/assets/images/AudioAdMockup2.png'
-import MapPng from '../public/assets/images/map.png'
+import MapPng from '../public/assets/images/MapSVG.svg'
 import RachelPng from '../public/assets/images/RachelMdundo.png'
 import VivianPng from '../public/assets/images/Vivian.png'
-import ThelmaPng from '../public/assets/images/Thelma.png'
-import NigerianFlag from '../components/Icons/NigerianFlag'
+import LanrePng from '../public/assets/images/Olanrewaju.png'
 import CountryCard from '../components/CountryCard';
+
+//Flags
+import { NG, GH, KE, TZ, UG, ZA } from '../components/Icons/Flags';
 
 //Icon Components
 import Trust from '../components/Icons/Trust'
@@ -43,7 +45,33 @@ import Vodacom from '../components/Icons/Vodacom'
 
 
 
+
 const Home = () => {
+
+    const youtubeData = [
+        'https://www.youtube.com/embed/SqZVm5s3vYE',
+        'https://www.youtube.com/embed/Dsq2flogCw4',
+        'https://www.youtube.com/embed/de0AV3q5dIg',
+        'https://www.youtube.com/embed/s6gCDK8CgBo',
+        'https://www.youtube.com/embed/Kp8clO-RRUU',
+        'https://www.youtube.com/embed/PmP8wnoz6IE',
+        'https://www.youtube.com/embed/PVJ5hS-GQhQ',
+        'https://www.youtube.com/embed/V9mhMM96G4g',
+        'https://www.youtube.com/embed/3P6qKvmJ3KA',
+        'https://www.youtube.com/embed/mCl4MdcYh0I',
+        'https://www.youtube.com/embed/Vj5II45DjXA',
+        'https://www.youtube.com/embed/pYfsS7NfggQ',
+        'https://www.youtube.com/embed/EaqN8qlJc7o',
+        'https://www.youtube.com/embed/tQa-BN2ly5Y',
+        'https://www.youtube.com/embed/WLmYZCkUvbM',
+        'https://www.youtube.com/embed/ty-ZEjUtvog',
+        'https://www.youtube.com/embed/LA2kx2qReNs',
+        'https://www.youtube.com/embed/l-fLSE1mNWg',
+        'https://www.youtube.com/embed/rR-nkopcn1g',
+        'https://www.youtube.com/embed/w9s73b37SzY',
+    ]
+
+
     return (
         <>
             <Head>
@@ -203,20 +231,21 @@ const Home = () => {
                         </p>
 
                         <div className={styles.statisticsCountriesCarousel}>
-                            <CountryCard flag={<NigerianFlag />} name="Nigeria" stat="8.7" />
-                            <CountryCard flag={<NigerianFlag />} name="Nigeria" stat="8.7" />
-                            <CountryCard flag={<NigerianFlag />} name="Nigeria" stat="8.7" />
-                            <CountryCard flag={<NigerianFlag />} name="Nigeria" stat="8.7" />
-                            <CountryCard flag={<NigerianFlag />} name="Nigeria" stat="8.7" />
+                            <CountryCard flag={<NG />} name="Nigeria" stat="10.7" />
+                            <CountryCard flag={<KE />} name="Kenya" stat="5.3" />
+                            <CountryCard flag={<TZ />} name="Tanzania" stat="5.1" />
+                            <CountryCard flag={<GH />} name="Ghana" stat="1.3" />
+                            <CountryCard flag={<UG />} name="Uganda" stat="2.9" />
+                            <CountryCard flag={<ZA />} name="S. Africa" stat="4.1" />
                         </div>
 
                         <div className={styles.statisticsButtons}>
                             <a href="mailto:brands@mdundo.com">Get in Touch</a>
-                            <a href="#numbers">View Q4 numers here &gt;</a>
+                            <a href="#numbers">View Full report Here here &gt;</a>
                         </div>
                     </div>
                     <div className={styles.statisticsImgBox}>
-                        <Image src={MapPng} alt='map of africa' />
+                        <Image src={MapPng} alt='map of africa' quality={100} />
                     </div>
                 </div>
             </section>
@@ -336,12 +365,12 @@ const Home = () => {
                     </div>
                     <div className={styles.teamMemberCard}>
                         <figure>
-                            <Image src={ThelmaPng} alt="team member" quality={100} />
+                            <Image src={LanrePng} alt="team member" quality={100} />
                         </figure>
-                        <h3>Thelma Areh</h3>
+                        <h3>Olanrewaju Effiong</h3>
                         <h4>Head of Brand Partnerships, Nigeria</h4>
                         <p>
-                            thelma@mdundo.com
+                            lanre@mdundo.com
                         </p>
                     </div>
                 </div>
@@ -353,18 +382,13 @@ const Home = () => {
                     <div className={styles.eventsContainerTop}>
                         <h2>Events</h2>
                         <div className={styles.eventsVideoCarousel}>
-                            <div className={styles.eventsVideoCard}>
-                                <iframe width='100%' height='100%' src="https://www.youtube.com/embed/gaaTve1xLvQ" title="YouTube video player" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowFullScreen loading='lazy'></iframe>
-                            </div>
-                            <div className={styles.eventsVideoCard}>
-                                <iframe width='100%' height="100%" src="https://www.youtube.com/embed/ArB3gEPc1I4" title="YouTube video player" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowFullScreen loading='lazy'></iframe>
-                            </div>
-                            <div className={styles.eventsVideoCard}>
-                                <iframe width='100%' height='100%' src="https://www.youtube.com/embed/gaaTve1xLvQ" title="YouTube video player" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowFullScreen loading='lazy'></iframe>
-                            </div>
-                            <div className={styles.eventsVideoCard}>
-                                <iframe width='100%' height="100%" src="https://www.youtube.com/embed/ArB3gEPc1I4" title="YouTube video player" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowFullScreen loading='lazy'></iframe>
-                            </div>
+                            {
+                                youtubeData.map((item, i) => (
+                                    <div key={i} className={styles.eventsVideoCard}>
+                                        <iframe width='100%' height='100%' src={item} title="YouTube video player" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowFullScreen loading='lazy'></iframe>
+                                    </div>
+                                ))
+                            }
                         </div>
                     </div>
                     <div className={styles.eventsText} id='contact-us'>

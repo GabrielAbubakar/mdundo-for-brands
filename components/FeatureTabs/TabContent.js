@@ -16,7 +16,8 @@ const TabContent = ({ id, activeTab, title, subtitle, content, src1, src2, audio
             <div>
                 <div className={styles.tabAudioGroup}>
                     <h4>Listen to Audio Ad</h4>
-                    <AudioPlayer audioLink={audio} />
+                    <iframe src={audio} frameBorder="0" height="125" width="100%"></iframe>
+                    {/* <AudioPlayer audioLink={audio} /> */}
                     {/* <Link href='#'> */}
                     <a href={article}>
                         See Campaign Results
