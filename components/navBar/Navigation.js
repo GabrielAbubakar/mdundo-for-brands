@@ -65,9 +65,15 @@ const Navigation = () => {
             <div className={styles.hamburgerMenuContainer} style={{ display: burgerOpen ? 'block' : 'none' }}>
                 <div className={styles.hamburgerMenu} >
                     <ul>
-                        <li onClick={closeBurger}><a href="#case-studies">Case Studies</a></li>
-                        <li onClick={closeBurger}><a href="#contact-us">Contact Us</a></li>
-                        <li onClick={closeBurger}><a href="#faqs">FAQS</a></li>
+                        <li onClick={closeBurger}>
+                            <a href="https://joseph04163.wixsite.com/my-site-1" target={`_blank`} rel="noreferrer">Case Studies</a>
+                        </li>
+                        <li onClick={closeBurger}>
+                            <a href="#contact-us">Contact Us</a>
+                        </li>
+                        <li onClick={closeBurger}>
+                            <a href="#faqs">FAQS</a>
+                        </li>
                     </ul>
 
                     <a href="#try" onClick={closeBurger}>Try Now</a>

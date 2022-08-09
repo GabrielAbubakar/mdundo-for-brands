@@ -85,10 +85,12 @@ const Home = () => {
                             Increase brand awareness, expand your audience, and boost foot traffic, among other things. Track the impact of your ad and gain insights on delivery and audience engagement.
                         </p>
                         <div className={styles.homeTextCta}>
-                            <Link href='/signup'>
-                                <a>Try Now <span>(Free)</span></a>
-                            </Link>
-                            <a href="#vid">Watch Introductory Video &gt;</a>
+                            {/* <Link href='/signup'> */}
+                            <a href="https://brandlift.mdundoforbrands.com/" target={`_blank`} rel="noreferrer">
+                                Try Now <span>(Free)</span>
+                            </a>
+                            {/* </Link> */}
+                            <a href="https://www.youtube.com/watch?v=TlHIPxUQP4E" target={`_blank`} rel="noreferrer">Watch Introductory Video &gt;</a>
                         </div>
                         <div className={styles.homeTextUsers}>
                             <p>Trusted by over 100 businesses</p>
