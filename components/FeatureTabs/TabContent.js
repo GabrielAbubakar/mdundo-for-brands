@@ -13,7 +13,7 @@ const TabContent = ({ id, activeTab, title, subtitle, content, src1, src2, audio
                 <p>{content}</p>
             </div>
 
-            <div>
+            <div className={styles.tabAudioContainer}>
                 <div className={styles.tabAudioGroup}>
                     <h4>Listen to Audio Ad</h4>
                     <iframe src={audio} frameBorder="0" height="125" width="100%"></iframe>

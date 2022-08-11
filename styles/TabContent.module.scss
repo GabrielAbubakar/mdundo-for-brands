@@ -3,12 +3,12 @@
 .tabContent {
     background-color: #525252;
     color: #ffffff;
-    padding: 5rem 2.5rem 5rem 7rem;
+    padding: 5rem 7rem;
     display: flex;
     gap: 12rem;
 
     @include respond(tab-land) {
-        padding: 3rem 2.5rem 3rem 5.5rem;
+        padding: 3rem 5.5rem;
         gap: 6rem;
     }
 }
@@ -56,13 +56,16 @@
     }
 }
 
+.tabAudioContainer {
+    max-width: 470px;
+}
+
 .tabAudioGroup {
     align-self: flex-start;
     padding: 2.7rem;
     background-color: #616161;
     border-radius: .9rem;
     box-shadow: 1px 1px 5px #525252;
-    max-width: 470px;
     // margin-right: 4rem;
 
     h4 {

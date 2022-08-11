@@ -20,13 +20,13 @@ const Tabs = () => {
     return (
         <div className={styles.userBrands}>
             <p>See our audio ads in action for these brands</p>
-            <ul className={styles.brandsNav}>
+            <ul className={`${styles.brandsNav} widthContainer`}>
                 <TabNavItem id="tab1" activeTab={activeTab} setActiveTab={setActiveTab} src={<VodaColor />} />
                 <TabNavItem id="tab2" activeTab={activeTab} setActiveTab={setActiveTab} src={<NiveaColor />} />
                 <TabNavItem id="tab3" activeTab={activeTab} setActiveTab={setActiveTab} src={<ChromeColor />} />
             </ul>
 
-            <div className={styles.brandDetails}>
+            <div className={`${styles.brandsDetails} widthContainer`}>
 
                 <TabContent id="tab1"
                     activeTab={activeTab}

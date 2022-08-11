@@ -20,7 +20,7 @@ const Navigation = () => {
         // Navigation Container
         <div className={styles.navigation__container} style={{ position: burgerOpen ? 'fixed' : 'initial' }}>
             {/* <div className="widthContainer"> */}
-            <nav className={styles.navigation}>
+            <nav className={`${styles.navigation} widthContainer`}>
                 {/* Main Logo */}
                 <Link href='/'>
                     <a className={styles.navigation__logo}>

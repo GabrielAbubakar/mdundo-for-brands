@@ -264,6 +264,10 @@
     display: flex;
     justify-content: space-between;
 
+    @include respond(tab-land) {
+        flex-direction: column-reverse;
+    }
+
     @include respond(tab-port) {
         flex-direction: column-reverse;
         gap: 1.6rem;

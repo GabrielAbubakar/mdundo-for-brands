@@ -104,7 +104,7 @@ const Home = () => {
             {/* Home Section */}
             <section className={styles.home} id="home">
                 {/* <div className='widthContainer'> */}
-                <div className={styles.homeContainer}>
+                <div className={`${styles.homeContainer} widthContainer`}>
                     <div className={styles.homeTextContent}>
                         <h1>
                             Find out how your brand is performing in <span>Africa&apos;s biggest consumer market</span>
@@ -148,7 +148,7 @@ const Home = () => {
             {/* Case Studies Section*/}
             <section className={styles.caseStudies} id="case-studies">
                 {/* <div className='widthContainer'> */}
-                <div className={styles.caseStudiesContainer}>
+                <div className={`${styles.caseStudiesContainer} widthContainer`}>
                     <div className={styles.caseStudiesLeft}>
                         <p>
                             See how we’ve helped our clients increase their Brandlift score with our <br /> unique advertising and insights.
@@ -165,7 +165,7 @@ const Home = () => {
             {/* Features Section */}
             <section className={styles.feature} id='feature'>
                 <div className={styles.featuresContainer}>
-                    <div className={styles.featuresTop}>
+                    <div className={`${styles.featuresTop} widthContainer`}>
                         <div className={styles.featuresContent}>
                             <h3>Audio Ads</h3>
                             <h2>Capture the Attention of your Audience with High <span>impact audio ads!</span></h2>
@@ -223,8 +223,8 @@ const Home = () => {
 
             {/* Statistics Section*/}
             <section className={styles.statistics} id="statistics">
-                <div className={styles.statisticsContainer}>
-                    <div className={styles.statisticsContent}>
+                <div className={`${styles.statisticsContainer} widthContainer`}>
+                    <div className={`${styles.statisticsContent} widthContainer`}>
                         <h2>We have a young, <br /> highly engaged audience!</h2>
                         <p>
                             Get in touch with us to capture the attention of your target audience with maximum impact, Today!
@@ -252,7 +252,7 @@ const Home = () => {
 
             {/* Clients Section */}
             <section className={styles.clients} id="clients">
-                <div className={styles.clientsContainer}>
+                <div className={`${styles.clientsContainer} widthContainer`}>
                     <div className={styles.clientsLogos}>
                         <h2>Who we work with</h2>
                         <h2>Our Strong Global Partners</h2>
@@ -342,7 +342,7 @@ const Home = () => {
             {/* Team Section */}
             <section className={styles.team} id="team">
                 <h2>The Team</h2>
-                <div className={styles.teamContainer}>
+                <div className={`${styles.teamContainer} widthContainer`}>
                     <div className={styles.teamMemberCard}>
                         <figure>
                             <Image src={RachelPng} alt="team member" quality={100} />
@@ -406,7 +406,7 @@ const Home = () => {
 
             {/* Footer Section */}
             <footer className={styles.footer} id="footer">
-                <div className={styles.footerContainer}>
+                <div className={`${styles.footerContainer} widthContainer`}>
                     <div className={styles.footerContentContainer}>
 
                         <figure>

@@ -1,4 +1,7 @@
 /* global styles */
+@import './_mixins';
+
+
 *,
 *::before,
 *::after {
@@ -100,8 +103,12 @@ body {
 }
 
 .widthContainer {
-    max-width: 1440px;
-    margin: 0 auto;
+
+    @include respond(big-desktop) {
+        padding-inline: 0 !important;
+        max-width: 1440px !important;
+        margin: 0 auto;
+    }
 }
 
 p {
